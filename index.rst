@@ -16,4 +16,6 @@ Dell Cloud Manager Security Guide
    roles/roles
    access_rights/access_rights
    planning/planning
+   implementation/implementation
+   group_resource_management/group_resource_management
    
