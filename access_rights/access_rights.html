@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Access Rights &mdash; Dell Cloud Manager Security Guide</title>
+    
+    <link rel="stylesheet" href="../_static/better.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="top" title="Dell Cloud Manager Security Guide" href="../index.html" />
+    <link rel="next" title="Resource Types" href="resource_types.html" />
+    <link rel="prev" title="Roles" href="../roles/roles.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  </head>
+  <body>
+<header id="pageheader">
+<h1>    
+<a href="../index.html ">Dell Cloud Manager Security Guide</a>
+</h1>
+</header>
+
+  <div class="related top">
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="../roles/roles.html" title="Previous document">Roles</a>
+        </li>
+        <li>
+          <a href="resource_types.html" title="Next document">Resource Types</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+  <nav id="breadcrumbs">
+    <ul>
+      <li><a href="../index.html">DCM Security Guide</a></li> 
+    </ul>
+  </nav>
+  </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="access-rights">
+<span id="id1"></span><h1>Access Rights<a class="headerlink" href="#access-rights" title="Permalink to this headline">¶</a></h1>
+<p>Access rights define what resources can be accessed and what actions can be performed against those resources.  Access Rights consist of these 3 items:</p>
+<div class="section" id="resource-type">
+<h2>Resource type<a class="headerlink" href="#resource-type" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Every page, link and action in the Dell Cloud Manager console is controlled by at least one resource type. For example:</li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li>Access to the actions available on the Cloud Resources &gt; Machine Images page is controlled by the <strong>Image</strong> resource type.</li>
+<li>Access to the actions available on the Cloud Resources &gt; Servers page is controlled by the <strong>Server</strong> resource type.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="action">
+<h2>Action<a class="headerlink" href="#action" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>The <strong>Action</strong>s determines what &#8220;actions&#8221; the Access Right will allow for the <strong>Resource</strong> type.  All actions can be allowed or specific actions can be allowed. The allowable actions differ depending upon the <strong>Resource</strong> type.</li>
+</ul>
+</div>
+<div class="section" id="qualifier">
+<h2>Qualifier<a class="headerlink" href="#qualifier" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>The <strong>Qualifier</strong> determines the &#8220;scope&#8221; of the resources defined in the Access Right to be controlled byt the Access</li>
+</ul>
+<blockquote>
+<div><p>There are 3 allowable qualifiers:</p>
+<ul class="simple">
+<li><strong>ANY</strong> (All resources associated with the specified Resource)</li>
+<li><strong>GROUP</strong> (Only resources owned by the Group)</li>
+<li><strong>MINE</strong> (Only resources owned by the User)</li>
+</ul>
+</div></blockquote>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/kraken.png" alt="Logo"/>
+            </a></p>
+<div id="searchbox" style="display: none">
+  <h3>Search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <div class="searchtip" style="font-size: 90%">Enter search terms.</div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+  <h3>This Page</h3>
+  <ul>
+<li><a class="reference internal" href="#">Access Rights</a><ul>
+<li><a class="reference internal" href="#resource-type">Resource type</a></li>
+<li><a class="reference internal" href="#action">Action</a></li>
+<li><a class="reference internal" href="#qualifier">Qualifier</a></li>
+</ul>
+</li>
+</ul>
+
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../roles/roles.html">Roles</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Access Rights</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="resource_types.html">Resource Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="actions.html">Actions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qualifiers.html">Qualifiers</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../planning/planning.html">Planning</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  <div class="related bottom">
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="../roles/roles.html" title="Previous document">Roles</a>
+        </li>
+        <li>
+          <a href="resource_types.html" title="Next document">Resource Types</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+  <nav id="breadcrumbs">
+    <ul>
+      <li><a href="../index.html">DCM Security Guide</a></li> 
+    </ul>
+  </nav>
+  </div>
+  <footer id="pagefooter">&copy; 2015, Dell Software. Updated Apr 10, 2015.
+    
+
+
+  </footer>
+  </body>
+</html>
