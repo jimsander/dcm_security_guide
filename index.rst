@@ -13,4 +13,7 @@ Dell Cloud Manager Security Guide
   
    preface 
    overview
+   roles/roles
+   access_rights/access_rights
+   planning/planning
    
