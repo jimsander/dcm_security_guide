@@ -25,7 +25,7 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="top" title="Dell Cloud Manager Security Guide" href="index.html" />
-    <link rel="prev" title="Dell Cloud Manager Security Guide" href="index.html" />
+    <link rel="prev" title="Preface" href="preface.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   </head>
   <body>
@@ -40,7 +40,7 @@
     <ul>
         <li>
           &larr;
-          <a href="index.html" title="Previous document">Dell Cloud Manager Security Guide</a>
+          <a href="preface.html" title="Previous document">Preface</a>
         </li>
     </ul>
   </nav>
@@ -58,17 +58,50 @@
             
   <div class="section" id="overview">
 <span id="id1"></span><h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h1>
-<blockquote>
-<div>Welcome to the Dell Cloud Manager Security Guide. This guide describes how you can configure security for Dell Cloud Manager using the Dell Cloud Manager security objects: Users, Groups, Roles and Access Rights.</div></blockquote>
-<div class="section" id="audience">
-<h2>Audience<a class="headerlink" href="#audience" title="Permalink to this headline">¶</a></h2>
-<blockquote>
-<div><p>The Dell Cloud Manager Security Guide is intended for Dell Cloud Manager administrators tasked with performing these tasks:</p>
+<p>Dell Cloud Manager Security is tightly integrated with companies, cloud accounts, groups, roles and access rights.</p>
+<div class="section" id="companies">
+<h2>Companies<a class="headerlink" href="#companies" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Designing and implementing security policies to protect the resources and data of an organization from unauthorized access.</li>
-<li>Creating, maintaining and terminating Dell Cloud Manager user accounts, groups, roles and access rights.</li>
+<li>A company in Dell Cloud Manager is a logical entity that contains one or more cloud accounts.</li>
 </ul>
-</div></blockquote>
+</div>
+<div class="section" id="cloud-accounts">
+<h2>Cloud Accounts<a class="headerlink" href="#cloud-accounts" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>A cloud account has a one to one relationship with a set of cloud credentials that are tied to a cloud provider.</li>
+<li>Multiple users can be associated with one cloud account.</li>
+</ul>
+</div>
+<div class="section" id="users">
+<h2>Users<a class="headerlink" href="#users" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>A User is linked to an individual that logs into the Dell Cloud Manager console and/or uses the Dell Cloud Manager Application Programming Interface.</li>
+<li>A User an be given access to one or more cloud accounts.</li>
+</ul>
+</div>
+<div class="section" id="groups">
+<h2>Groups<a class="headerlink" href="#groups" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>A Group is the key central security component of Dell Cloud Manager.</li>
+<li>All users are assigned to at least one group, but can be assigned to several groups.</li>
+<li>A group can contain zero or one role. However if a group does not have a role then the group does not provide any access rights.</li>
+</ul>
+</div>
+<div class="section" id="roles">
+<h2>Roles<a class="headerlink" href="#roles" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Roles contain a set of access rights.</li>
+</ul>
+</div>
+<div class="section" id="access-rights">
+<h2>Access Rights<a class="headerlink" href="#access-rights" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Access rights define what resources can be accessed and what actions can be performed against those resources.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Access rights are cumulative. If a user is defined to multiple groups the user&#8217;s access rights will be a cumulation (union) of the access rights from all roles associated with those groups.</p>
+</div>
 </div>
 </div>
 
@@ -95,13 +128,19 @@
   <h3>This Page</h3>
   <ul>
 <li><a class="reference internal" href="#">Overview</a><ul>
-<li><a class="reference internal" href="#audience">Audience</a></li>
+<li><a class="reference internal" href="#companies">Companies</a></li>
+<li><a class="reference internal" href="#cloud-accounts">Cloud Accounts</a></li>
+<li><a class="reference internal" href="#users">Users</a></li>
+<li><a class="reference internal" href="#groups">Groups</a></li>
+<li><a class="reference internal" href="#roles">Roles</a></li>
+<li><a class="reference internal" href="#access-rights">Access Rights</a></li>
 </ul>
 </li>
 </ul>
 
 <h3><a href="index.html">Table of Contents</a></h3>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="preface.html">Preface</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="">Overview</a><ul class="simple">
 </ul>
 </li>
@@ -116,7 +155,7 @@
     <ul>
         <li>
           &larr;
-          <a href="index.html" title="Previous document">Dell Cloud Manager Security Guide</a>
+          <a href="preface.html" title="Previous document">Preface</a>
         </li>
     </ul>
   </nav>
