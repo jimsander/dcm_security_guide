@@ -15,6 +15,7 @@ Dell Cloud Manager Cloud Security Guide
    overview
    conceptual_view
    access_rights/access_rights
+   additonal_group_settings
    planning/planning
    implementation/implementation
    group_resource_management/group_resource_management

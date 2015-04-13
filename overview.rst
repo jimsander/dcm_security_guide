@@ -41,6 +41,8 @@ Groups
 
 * For each cloud account in a group that has a role assigned to it, one or more budgets can be assigned to that cloud account.
 
+* There are also additional access settings which can be configured on the group which control whether or not members of the group can manage company settings, alerts, reports, budgets, user management and configuration management.
+
 Roles
 ~~~~~
 
