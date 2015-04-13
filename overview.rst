@@ -7,7 +7,7 @@
 Overview
 --------
 
-Dell Cloud Manager Security is tightly integrated with companies, cloud accounts, groups, roles and access rights.
+Dell Cloud Manager Cloud Security is tightly integrated with companies, cloud accounts, groups, roles and access rights.
 
 Companies
 ~~~~~~~~~
@@ -19,23 +19,27 @@ Cloud Accounts
 
 * A cloud account has a one to one relationship with a set of cloud credentials that are tied to a cloud provider.  
 
-* Multiple users can be associated with one cloud account.
+* Multiple users can be associated with one cloud account
 
 Users
 ~~~~~
 
-* A User is linked to an individual that logs into the Dell Cloud Manager console and/or uses the Dell Cloud Manager Application Programming Interface.
+* A user is linked to an individual that logs into the Dell Cloud Manager console and/or uses the Dell Cloud Manager Application Programming Interface.
 
-* A User an be given access to one or more cloud accounts.
+* A user can be given access to one or more cloud accounts by assigning the user to a one or more groups.
 
 Groups
 ~~~~~~
 
-* A Group is the key central security component of Dell Cloud Manager.
+* A group is the key central security component of Dell Cloud Manager.
+
+* Groups associate users with Cloud Accounts, Roles and Budgets
 
 * All users are assigned to at least one group, but can be assigned to several groups.
 
-* A group can contain zero or one role. However if a group does not have a role then the group does not provide any access rights.
+* A group can contain zero or one role per cloud account.  If a group does not contain a role for a cloud account then the group does not provide access to that cloud account.
+
+* For each cloud account in a group that has a role assigned to it, one or more budgets can be assigned to that cloud account.
 
 Roles
 ~~~~~

@@ -43,7 +43,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'DCM Security Guide'
+project = u'DCM Cloud Security Guide'
 copyright = u'2015, Dell Software. '
 
 # The version info for the project you're documenting, acts as replacement for
@@ -112,10 +112,10 @@ html_theme_path = ['_themes']
 # "<project> v<release> documentation".
 
 # Tite for the HTML pages
-html_title = "Dell Cloud Manager Security Guide"
+html_title = "Dell Cloud Manager Cloud Security Guide"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-html_short_title = "DCM Security Guide"
+html_short_title = "DCM Cloud Security Guide"
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
@@ -198,7 +198,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'python_agent.tex', u'DCM Security Guide',
+  ('index', 'python_agent.tex', u'DCM Cloud Security Guide',
    u'Dell', 'manual'),
 ]
 
@@ -227,7 +227,7 @@ latex_logo = "./_static/kraken.png"
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'dcm', u'DCM Security Guide',
+    ('index', 'dcm', u'DCM Cloud Security Guide',
      [u'DCM'], 1)
 ]
 
@@ -241,7 +241,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'DCM', u'DCM Security Guide',
+  ('index', 'DCM', u'DCM Cloud Security Guide',
    u'Dell Cloud Manager', 'Dell', 'The DCM Documentation Project',
    'On-Premise'),
 ]

@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Dell Cloud Manager Security Guide
----------------------------------
+Dell Cloud Manager Cloud Security Guide
+---------------------------------------
 
 .. toctree::
    :maxdepth: 3
@@ -13,7 +13,7 @@ Dell Cloud Manager Security Guide
   
    preface 
    overview
-   roles/roles
+   conceptual_view
    access_rights/access_rights
    planning/planning
    implementation/implementation

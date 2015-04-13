@@ -12,10 +12,14 @@ Access rights define what resources can be accessed and what actions can be perf
 Resource type
 ~~~~~~~~~~~~~
 
-* Every page, link and action in the Dell Cloud Manager console is controlled by at least one resource type. For example:
+ The resource type specifies the resources to be controlled (e.g. servers, machine images, volumes, etc.)
 
- * Access to the actions available on the Cloud Resources > Machine Images page is controlled by the **Image** resource type.
- * Access to the actions available on the Cloud Resources > Servers page is controlled by the **Server** resource type.
+ For instance:
+
+ * The **Server** resource type is used to control the access and actions for cloud servers. 
+ * The **Image** resource type  is used to control the access and actions for cloud machine images.
+
+ Refer to :ref:`Resource Types <access_rights_resource_types>` for the list of supported resource types.
 
 Action
 ~~~~~~
@@ -25,14 +29,13 @@ Action
 Qualifier
 ~~~~~~~~~
 
-* The **Qualifier** determines the "scope" of the resources defined in the Access Right to be controlled byt the Access
+* The **Qualifier** determines the "scope" of the resources defined in the Access Right.
 
  There are 3 allowable qualifiers:
 
  * **ANY** (All resources associated with the specified Resource)
  * **GROUP** (Only resources owned by the Group)
  * **MINE** (Only resources owned by the User)
-
 
 .. toctree::
    :maxdepth: 3

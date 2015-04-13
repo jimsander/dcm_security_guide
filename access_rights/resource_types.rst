@@ -7,69 +7,39 @@
 Resource Types
 --------------
 
-The following resources can be secured:
++-------------------------+---------------------------------------------------------------------------------------------------------------------+
+| Resource Type           | Description                                                                                                         | 
++=========================+=====================================================================================================================+
+| **Account**             | Controls access and the allowable actions to account level API Keys                                                 |  
++-------------------------+---------------------------------------------------------------------------------------------------------------------+
+| **API Key**             | Controls access and the allowable actions to user API Keys                                                          |  
++-------------------------+---------------------------------------------------------------------------------------------------------------------+
+| **Applications**        | Controls access and the allowable actions to stacks                                                                 |  
++-------------------------+---------------------------------------------------------------------------------------------------------------------+
+| **Agent Proxy**         | Controls access and the allowable actions to the Agent Proxy (required in some situations for the DCM Legacy Agent) |
++-------------------------+---------------------------------------------------------------------------------------------------------------------+
+| **Blueprint**           | Controls access and the allowable actions to blueprints                                                             |
++-------------------------+---------------------------------------------------------------------------------------------------------------------+
+| **Firewall**            | Controls access and the allowable actions to firewalls (Cloud Security Groups)                                      |
++-------------------------+---------------------------------------------------------------------------------------------------------------------+
+| **Image**               | Controls access and the allowable actions to machine images                                                         |
++-------------------------+---------------------------------------------------------------------------------------------------------------------+
+| **IP**                  | Controls access and the allowable actions to IP Adresses (Elastic IPs, Fixed IPs)                                   |
++-------------------------+---------------------------------------------------------------------------------------------------------------------+
+| **Load Balancer**       | Controls access and the allowable actions to DCM supported Cloud Provider Load Balancers                            |
++-------------------------+---------------------------------------------------------------------------------------------------------------------+
+| **Network**             | Controls access and the allowable actions to virtual private cloud networks                                         |
++-------------------------+---------------------------------------------------------------------------------------------------------------------+
+| **Relational Database** | Controls access and the allowable actions to DCM supported Cloud Provider relational databases                      |
++-------------------------+---------------------------------------------------------------------------------------------------------------------+
+| **Server**              | Controls access and the allowable actions to servers (virtual machines)                                             |
++-------------------------+---------------------------------------------------------------------------------------------------------------------+
+| **Snapshot**            | Controls access and the allowable actions to snapshot (volume backups)                                              |
++-------------------------+---------------------------------------------------------------------------------------------------------------------+
+| **SSH Key**             | Controls access and the allowable actions to SSH keys                                                               |
++-------------------------+---------------------------------------------------------------------------------------------------------------------+
+| **Subnet**              | Controls access and the allowable actions to virtual private cloud network subnets                                  |
++-------------------------+---------------------------------------------------------------------------------------------------------------------+
+| **Volume**              | Controls access and the allowable actions to volumes                                                                |
++-------------------------+---------------------------------------------------------------------------------------------------------------------+
 
-* Account 
-
- * controls access to Account Level API Keys
- * controls access to cloud regions
-
-* API Key
-
- * controls access to User API Keys
-
-* Applications    
-
- * controls access to Stacks
-
-* Agent Proxy
-
- * controls access to the Agent Proxy (required in some situations for the DCM Legacy Agent)
-
-* Blueprint
-
- * contols access to Blueprints
-
-* Firewall
-
- * controls access to Firewalls (Cloud Security Groups)
-
-* Image
-
- * controls access to machine images
-
-* IP
-
- * controls access to IP Adresses (Elastic IPs, Fixed IPs)
-
-* Load Balancer
-
- * controls access to DCM supported Cloud Provider Load Balancers
-
-* Network
-
- * controls access to Virtual Private Cloud networks
-
-* Relational Database
-
- * controls access to DCM supported Cloud Provider relational databases
-
-* Server
-
- * controls access to servers (virtual machines)
-
-* Snapshot
-
- * controls access to Snapshot (volume backups)
-
-* SSH Key
-
- * controls access to SSH keys
-
-* Subnet
-
- * controls access to Virtual Private Cloud network subnets
-
-* Volume    
-
- * controls access to Volumes
