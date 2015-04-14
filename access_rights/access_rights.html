@@ -63,37 +63,26 @@
             
   <div class="section" id="access-rights">
 <span id="id1"></span><h1>Access Rights<a class="headerlink" href="#access-rights" title="Permalink to this headline">¶</a></h1>
-<p>Access rights define what resources can be accessed and what actions can be performed against those resources.  Access Rights consist of these 3 items:</p>
+<p><strong>Access Rights</strong> define what resources can be accessed and what actions can be performed against those resources.  A access right consist of these 3 items:</p>
 <div class="section" id="resource-type">
 <h2>Resource type<a class="headerlink" href="#resource-type" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><p>The resource type specifies the resources to be controlled (e.g. servers, machine images, volumes, etc.)</p>
-<p>For instance:</p>
-<ul class="simple">
-<li>The <strong>Server</strong> resource type is used to control the access and actions for cloud servers.</li>
-<li>The <strong>Image</strong> resource type  is used to control the access and actions for cloud machine images.</li>
-</ul>
 <p>Refer to <a class="reference internal" href="resource_types.html#access-rights-resource-types"><em>Resource Types</em></a> for the list of supported resource types.</p>
 </div></blockquote>
 </div>
 <div class="section" id="action">
 <h2>Action<a class="headerlink" href="#action" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>The <strong>Action</strong>s determines what &#8220;actions&#8221; the Access Right will allow for the <strong>Resource</strong> type.  All actions can be allowed or specific actions can be allowed. The allowable actions differ depending upon the <strong>Resource</strong> type.</li>
-</ul>
+<blockquote>
+<div><p>The <strong>Action</strong>s determines what &#8220;actions&#8221; the Access Right will allow for the <strong>Resource</strong> type.  All actions can be allowed or specific actions can be allowed. The allowable actions differ depending upon the <strong>Resource</strong> type.</p>
+<p>Refer to <a class="reference internal" href="actions.html#access-rights-actions"><em>Actions</em></a> for the list of supported actions by resource type.</p>
+</div></blockquote>
 </div>
 <div class="section" id="qualifier">
 <h2>Qualifier<a class="headerlink" href="#qualifier" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>The <strong>Qualifier</strong> determines the &#8220;scope&#8221; of the resources defined in the Access Right.</li>
-</ul>
 <blockquote>
-<div><p>There are 3 allowable qualifiers:</p>
-<ul class="simple">
-<li><strong>ANY</strong> (All resources associated with the specified Resource)</li>
-<li><strong>GROUP</strong> (Only resources owned by the Group)</li>
-<li><strong>MINE</strong> (Only resources owned by the User)</li>
-</ul>
+<div><p>The <strong>Qualifier</strong> determines the &#8220;scope&#8221; of the resources.</p>
+<p>Refer to <a class="reference internal" href="qualifiers.html#access-rights-qualifiers"><em>Qualifiers</em></a> for the list of the supported qualifiers.</p>
 </div></blockquote>
 <div class="toctree-wrapper compound">
 </div>
