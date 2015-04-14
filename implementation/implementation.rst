@@ -7,19 +7,19 @@
 Implementation
 --------------
 
-Now you need to decide how you are going to implement your Dell Cloud Manager security objectives.
+Now you need to decide how you are going to implement your Dell Cloud Manager Cloud security objectives.
 
-1. Different User types (Roles)
+What roles do you need to create?  For each role:
 
-2. Resources
-
-3. Actions
-
-2. Qualifiers 
+* What access rights do you need to create in the role?
  
- * ANY
- * GROUP
- * MINE
+ * What Resources need to be defined in the role?
+ * What Actions for each resource need to be defined?
+ * What Qualifier needs to be defined for each action?
+    
+  * Allow "any" access for the action?
+  * Restrict to "Group" ownership for the action?
+  * Restrict to "user" ownership for the action?
 
 .. toctree::
    :maxdepth: 3
