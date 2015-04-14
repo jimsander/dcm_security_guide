@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Overview &mdash; Dell Cloud Manager Security Guide</title>
+    <title>Overview &mdash; Dell Cloud Manager Cloud Security Guide</title>
     
     <link rel="stylesheet" href="_static/better.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -24,15 +24,15 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-    <link rel="top" title="Dell Cloud Manager Security Guide" href="index.html" />
-    <link rel="next" title="Roles" href="roles/roles.html" />
+    <link rel="top" title="Dell Cloud Manager Cloud Security Guide" href="index.html" />
+    <link rel="next" title="Conceptual" href="conceptual_view.html" />
     <link rel="prev" title="Preface" href="preface.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   </head>
   <body>
 <header id="pageheader">
 <h1>    
-<a href="index.html ">Dell Cloud Manager Security Guide</a>
+<a href="index.html ">Dell Cloud Manager Cloud Security Guide</a>
 </h1>
 </header>
 
@@ -44,14 +44,14 @@
           <a href="preface.html" title="Previous document">Preface</a>
         </li>
         <li>
-          <a href="roles/roles.html" title="Next document">Roles</a>
+          <a href="conceptual_view.html" title="Next document">Conceptual</a>
           &rarr;
         </li>
     </ul>
   </nav>
   <nav id="breadcrumbs">
     <ul>
-      <li><a href="index.html">DCM Security Guide</a></li> 
+      <li><a href="index.html">DCM Cloud Security Guide</a></li> 
     </ul>
   </nav>
   </div>  
@@ -63,7 +63,7 @@
             
   <div class="section" id="overview">
 <span id="id1"></span><h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h1>
-<p>Dell Cloud Manager Security is tightly integrated with companies, cloud accounts, groups, roles and access rights.</p>
+<p>Dell Cloud Manager Cloud Security is tightly integrated with companies, cloud accounts, groups, roles and access rights.</p>
 <div class="section" id="companies">
 <h2>Companies<a class="headerlink" href="#companies" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -74,22 +74,25 @@
 <h2>Cloud Accounts<a class="headerlink" href="#cloud-accounts" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>A cloud account has a one to one relationship with a set of cloud credentials that are tied to a cloud provider.</li>
-<li>Multiple users can be associated with one cloud account.</li>
+<li>Multiple users can be associated with one cloud account</li>
 </ul>
 </div>
 <div class="section" id="users">
 <h2>Users<a class="headerlink" href="#users" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>A User is linked to an individual that logs into the Dell Cloud Manager console and/or uses the Dell Cloud Manager Application Programming Interface.</li>
-<li>A User an be given access to one or more cloud accounts.</li>
+<li>A user is linked to an individual that logs into the Dell Cloud Manager console and/or uses the Dell Cloud Manager Application Programming Interface.</li>
+<li>A user can be given access to one or more cloud accounts by assigning the user to a one or more groups.</li>
 </ul>
 </div>
 <div class="section" id="groups">
 <h2>Groups<a class="headerlink" href="#groups" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>A Group is the key central security component of Dell Cloud Manager.</li>
+<li>A group is the key central security component of Dell Cloud Manager.</li>
+<li>Groups associate users with Cloud Accounts, Roles and Budgets</li>
 <li>All users are assigned to at least one group, but can be assigned to several groups.</li>
-<li>A group can contain zero or one role. However if a group does not have a role then the group does not provide any access rights.</li>
+<li>A group can contain zero or one role per cloud account.  If a group does not contain a role for a cloud account then the group does not provide access to that cloud account.</li>
+<li>For each cloud account in a group that has a role assigned to it, one or more budgets can be assigned to that cloud account.</li>
+<li>There are also additional access settings which can be configured on the group which control whether or not members of the group can manage company settings, alerts, reports, budgets, user management and configuration management.</li>
 </ul>
 </div>
 <div class="section" id="roles">
@@ -149,8 +152,9 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="">Overview</a><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="roles/roles.html">Roles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conceptual_view.html">Conceptual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="access_rights/access_rights.html">Access Rights</a></li>
+<li class="toctree-l1"><a class="reference internal" href="additonal_group_settings.html">Additional Group Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="planning/planning.html">Planning</a></li>
 <li class="toctree-l1"><a class="reference internal" href="implementation/implementation.html">Implementation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="group_resource_management/group_resource_management.html">Resource Security by Group</a></li>
@@ -168,18 +172,18 @@
           <a href="preface.html" title="Previous document">Preface</a>
         </li>
         <li>
-          <a href="roles/roles.html" title="Next document">Roles</a>
+          <a href="conceptual_view.html" title="Next document">Conceptual</a>
           &rarr;
         </li>
     </ul>
   </nav>
   <nav id="breadcrumbs">
     <ul>
-      <li><a href="index.html">DCM Security Guide</a></li> 
+      <li><a href="index.html">DCM Cloud Security Guide</a></li> 
     </ul>
   </nav>
   </div>
-  <footer id="pagefooter">&copy; 2015, Dell Software. Updated Apr 10, 2015.
+  <footer id="pagefooter">&copy; 2015, Dell Software. Updated Apr 14, 2015.
     
 
 

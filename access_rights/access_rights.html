@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Access Rights &mdash; Dell Cloud Manager Security Guide</title>
+    <title>Access Rights &mdash; Dell Cloud Manager Cloud Security Guide</title>
     
     <link rel="stylesheet" href="../_static/better.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -24,15 +24,15 @@
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
-    <link rel="top" title="Dell Cloud Manager Security Guide" href="../index.html" />
+    <link rel="top" title="Dell Cloud Manager Cloud Security Guide" href="../index.html" />
     <link rel="next" title="Resource Types" href="resource_types.html" />
-    <link rel="prev" title="Roles" href="../roles/roles.html" />
+    <link rel="prev" title="Conceptual" href="../conceptual_view.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   </head>
   <body>
 <header id="pageheader">
 <h1>    
-<a href="../index.html ">Dell Cloud Manager Security Guide</a>
+<a href="../index.html ">Dell Cloud Manager Cloud Security Guide</a>
 </h1>
 </header>
 
@@ -41,7 +41,7 @@
     <ul>
         <li>
           &larr;
-          <a href="../roles/roles.html" title="Previous document">Roles</a>
+          <a href="../conceptual_view.html" title="Previous document">Conceptual</a>
         </li>
         <li>
           <a href="resource_types.html" title="Next document">Resource Types</a>
@@ -51,7 +51,7 @@
   </nav>
   <nav id="breadcrumbs">
     <ul>
-      <li><a href="../index.html">DCM Security Guide</a></li> 
+      <li><a href="../index.html">DCM Cloud Security Guide</a></li> 
     </ul>
   </nav>
   </div>  
@@ -66,14 +66,14 @@
 <p>Access rights define what resources can be accessed and what actions can be performed against those resources.  Access Rights consist of these 3 items:</p>
 <div class="section" id="resource-type">
 <h2>Resource type<a class="headerlink" href="#resource-type" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>Every page, link and action in the Dell Cloud Manager console is controlled by at least one resource type. For example:</li>
-</ul>
 <blockquote>
-<div><ul class="simple">
-<li>Access to the actions available on the Cloud Resources &gt; Machine Images page is controlled by the <strong>Image</strong> resource type.</li>
-<li>Access to the actions available on the Cloud Resources &gt; Servers page is controlled by the <strong>Server</strong> resource type.</li>
+<div><p>The resource type specifies the resources to be controlled (e.g. servers, machine images, volumes, etc.)</p>
+<p>For instance:</p>
+<ul class="simple">
+<li>The <strong>Server</strong> resource type is used to control the access and actions for cloud servers.</li>
+<li>The <strong>Image</strong> resource type  is used to control the access and actions for cloud machine images.</li>
 </ul>
+<p>Refer to <a class="reference internal" href="resource_types.html#access-rights-resource-types"><em>Resource Types</em></a> for the list of supported resource types.</p>
 </div></blockquote>
 </div>
 <div class="section" id="action">
@@ -85,7 +85,7 @@
 <div class="section" id="qualifier">
 <h2>Qualifier<a class="headerlink" href="#qualifier" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>The <strong>Qualifier</strong> determines the &#8220;scope&#8221; of the resources defined in the Access Right to be controlled byt the Access</li>
+<li>The <strong>Qualifier</strong> determines the &#8220;scope&#8221; of the resources defined in the Access Right.</li>
 </ul>
 <blockquote>
 <div><p>There are 3 allowable qualifiers:</p>
@@ -134,13 +134,14 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../preface.html">Preface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../roles/roles.html">Roles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../conceptual_view.html">Conceptual</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="">Access Rights</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="resource_types.html">Resource Types</a></li>
 <li class="toctree-l2"><a class="reference internal" href="actions.html">Actions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="qualifiers.html">Qualifiers</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../additonal_group_settings.html">Additional Group Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../planning/planning.html">Planning</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../implementation/implementation.html">Implementation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../group_resource_management/group_resource_management.html">Resource Security by Group</a></li>
@@ -155,7 +156,7 @@
     <ul>
         <li>
           &larr;
-          <a href="../roles/roles.html" title="Previous document">Roles</a>
+          <a href="../conceptual_view.html" title="Previous document">Conceptual</a>
         </li>
         <li>
           <a href="resource_types.html" title="Next document">Resource Types</a>
@@ -165,11 +166,11 @@
   </nav>
   <nav id="breadcrumbs">
     <ul>
-      <li><a href="../index.html">DCM Security Guide</a></li> 
+      <li><a href="../index.html">DCM Cloud Security Guide</a></li> 
     </ul>
   </nav>
   </div>
-  <footer id="pagefooter">&copy; 2015, Dell Software. Updated Apr 10, 2015.
+  <footer id="pagefooter">&copy; 2015, Dell Software. Updated Apr 14, 2015.
     
 
 

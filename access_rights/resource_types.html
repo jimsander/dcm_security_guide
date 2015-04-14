@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Resource Types &mdash; Dell Cloud Manager Security Guide</title>
+    <title>Resource Types &mdash; Dell Cloud Manager Cloud Security Guide</title>
     
     <link rel="stylesheet" href="../_static/better.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -24,7 +24,7 @@
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
-    <link rel="top" title="Dell Cloud Manager Security Guide" href="../index.html" />
+    <link rel="top" title="Dell Cloud Manager Cloud Security Guide" href="../index.html" />
     <link rel="up" title="Access Rights" href="access_rights.html" />
     <link rel="next" title="Actions" href="actions.html" />
     <link rel="prev" title="Access Rights" href="access_rights.html" />
@@ -33,7 +33,7 @@
   <body>
 <header id="pageheader">
 <h1>    
-<a href="../index.html ">Dell Cloud Manager Security Guide</a>
+<a href="../index.html ">Dell Cloud Manager Cloud Security Guide</a>
 </h1>
 </header>
 
@@ -52,7 +52,7 @@
   </nav>
   <nav id="breadcrumbs">
     <ul>
-      <li><a href="../index.html">DCM Security Guide</a></li>
+      <li><a href="../index.html">DCM Cloud Security Guide</a></li>
       <li>
         <a href="access_rights.html">Access Rights</a>
       </li> 
@@ -67,136 +67,67 @@
             
   <div class="section" id="resource-types">
 <span id="access-rights-resource-types"></span><h1>Resource Types<a class="headerlink" href="#resource-types" title="Permalink to this headline">¶</a></h1>
-<p>The following resources can be secured:</p>
-<ul class="simple">
-<li>Account</li>
-</ul>
-<blockquote>
-<div><ul class="simple">
-<li>controls access to Account Level API Keys</li>
-<li>controls access to cloud regions</li>
-</ul>
-</div></blockquote>
-<ul class="simple">
-<li>API Key</li>
-</ul>
-<blockquote>
-<div><ul class="simple">
-<li>controls access to User API Keys</li>
-</ul>
-</div></blockquote>
-<ul class="simple">
-<li>Applications</li>
-</ul>
-<blockquote>
-<div><ul class="simple">
-<li>controls access to Stacks</li>
-</ul>
-</div></blockquote>
-<ul class="simple">
-<li>Agent Proxy</li>
-</ul>
-<blockquote>
-<div><ul class="simple">
-<li>controls access to the Agent Proxy (required in some situations for the DCM Legacy Agent)</li>
-</ul>
-</div></blockquote>
-<ul class="simple">
-<li>Blueprint</li>
-</ul>
-<blockquote>
-<div><ul class="simple">
-<li>contols access to Blueprints</li>
-</ul>
-</div></blockquote>
-<ul class="simple">
-<li>Firewall</li>
-</ul>
-<blockquote>
-<div><ul class="simple">
-<li>controls access to Firewalls (Cloud Security Groups)</li>
-</ul>
-</div></blockquote>
-<ul class="simple">
-<li>Image</li>
-</ul>
-<blockquote>
-<div><ul class="simple">
-<li>controls access to machine images</li>
-</ul>
-</div></blockquote>
-<ul class="simple">
-<li>IP</li>
-</ul>
-<blockquote>
-<div><ul class="simple">
-<li>controls access to IP Adresses (Elastic IPs, Fixed IPs)</li>
-</ul>
-</div></blockquote>
-<ul class="simple">
-<li>Load Balancer</li>
-</ul>
-<blockquote>
-<div><ul class="simple">
-<li>controls access to DCM supported Cloud Provider Load Balancers</li>
-</ul>
-</div></blockquote>
-<ul class="simple">
-<li>Network</li>
-</ul>
-<blockquote>
-<div><ul class="simple">
-<li>controls access to Virtual Private Cloud networks</li>
-</ul>
-</div></blockquote>
-<ul class="simple">
-<li>Relational Database</li>
-</ul>
-<blockquote>
-<div><ul class="simple">
-<li>controls access to DCM supported Cloud Provider relational databases</li>
-</ul>
-</div></blockquote>
-<ul class="simple">
-<li>Server</li>
-</ul>
-<blockquote>
-<div><ul class="simple">
-<li>controls access to servers (virtual machines)</li>
-</ul>
-</div></blockquote>
-<ul class="simple">
-<li>Snapshot</li>
-</ul>
-<blockquote>
-<div><ul class="simple">
-<li>controls access to Snapshot (volume backups)</li>
-</ul>
-</div></blockquote>
-<ul class="simple">
-<li>SSH Key</li>
-</ul>
-<blockquote>
-<div><ul class="simple">
-<li>controls access to SSH keys</li>
-</ul>
-</div></blockquote>
-<ul class="simple">
-<li>Subnet</li>
-</ul>
-<blockquote>
-<div><ul class="simple">
-<li>controls access to Virtual Private Cloud network subnets</li>
-</ul>
-</div></blockquote>
-<ul class="simple">
-<li>Volume</li>
-</ul>
-<blockquote>
-<div><ul class="simple">
-<li>controls access to Volumes</li>
-</ul>
-</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="82%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Resource Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><strong>Account</strong></td>
+<td>Controls access and the allowable actions to account level API Keys</td>
+</tr>
+<tr class="row-odd"><td><strong>API Key</strong></td>
+<td>Controls access and the allowable actions to user API Keys</td>
+</tr>
+<tr class="row-even"><td><strong>Applications</strong></td>
+<td>Controls access and the allowable actions to stacks</td>
+</tr>
+<tr class="row-odd"><td><strong>Agent Proxy</strong></td>
+<td>Controls access and the allowable actions to the Agent Proxy (required in some situations for the DCM Legacy Agent)</td>
+</tr>
+<tr class="row-even"><td><strong>Blueprint</strong></td>
+<td>Controls access and the allowable actions to blueprints</td>
+</tr>
+<tr class="row-odd"><td><strong>Firewall</strong></td>
+<td>Controls access and the allowable actions to firewalls (Cloud Security Groups)</td>
+</tr>
+<tr class="row-even"><td><strong>Image</strong></td>
+<td>Controls access and the allowable actions to machine images</td>
+</tr>
+<tr class="row-odd"><td><strong>IP</strong></td>
+<td>Controls access and the allowable actions to IP Adresses (Elastic IPs, Fixed IPs)</td>
+</tr>
+<tr class="row-even"><td><strong>Load Balancer</strong></td>
+<td>Controls access and the allowable actions to DCM supported Cloud Provider Load Balancers</td>
+</tr>
+<tr class="row-odd"><td><strong>Network</strong></td>
+<td>Controls access and the allowable actions to virtual private cloud networks</td>
+</tr>
+<tr class="row-even"><td><strong>Relational Database</strong></td>
+<td>Controls access and the allowable actions to DCM supported Cloud Provider relational databases</td>
+</tr>
+<tr class="row-odd"><td><strong>Server</strong></td>
+<td>Controls access and the allowable actions to servers (virtual machines)</td>
+</tr>
+<tr class="row-even"><td><strong>Snapshot</strong></td>
+<td>Controls access and the allowable actions to snapshot (volume backups)</td>
+</tr>
+<tr class="row-odd"><td><strong>SSH Key</strong></td>
+<td>Controls access and the allowable actions to SSH keys</td>
+</tr>
+<tr class="row-even"><td><strong>Subnet</strong></td>
+<td>Controls access and the allowable actions to virtual private cloud network subnets</td>
+</tr>
+<tr class="row-odd"><td><strong>Volume</strong></td>
+<td>Controls access and the allowable actions to volumes</td>
+</tr>
+</tbody>
+</table>
 </div>
 
 
@@ -223,13 +154,14 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../preface.html">Preface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../roles/roles.html">Roles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../conceptual_view.html">Conceptual</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="access_rights.html">Access Rights</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="">Resource Types</a></li>
 <li class="toctree-l2"><a class="reference internal" href="actions.html">Actions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="qualifiers.html">Qualifiers</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../additonal_group_settings.html">Additional Group Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../planning/planning.html">Planning</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../implementation/implementation.html">Implementation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../group_resource_management/group_resource_management.html">Resource Security by Group</a></li>
@@ -254,14 +186,14 @@
   </nav>
   <nav id="breadcrumbs">
     <ul>
-      <li><a href="../index.html">DCM Security Guide</a></li>
+      <li><a href="../index.html">DCM Cloud Security Guide</a></li>
       <li>
         <a href="access_rights.html">Access Rights</a>
       </li> 
     </ul>
   </nav>
   </div>
-  <footer id="pagefooter">&copy; 2015, Dell Software. Updated Apr 10, 2015.
+  <footer id="pagefooter">&copy; 2015, Dell Software. Updated Apr 14, 2015.
     
 
 
