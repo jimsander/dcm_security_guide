@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Create Access Rights &mdash; Dell Cloud Manager Cloud Security Guide</title>
+    
+    <link rel="stylesheet" href="../_static/better.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="top" title="Dell Cloud Manager Cloud Security Guide" href="../index.html" />
+    <link rel="up" title="Create Role Example" href="create_role_example.html" />
+    <link rel="next" title="Create Group Example" href="../create_group/create_group_example.html" />
+    <link rel="prev" title="Create Role" href="create_role.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  </head>
+  <body>
+<header id="pageheader">
+<h1>    
+<a href="../index.html ">Dell Cloud Manager Cloud Security Guide</a>
+</h1>
+</header>
+
+  <div class="related top">
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="create_role.html" title="Previous document">Create Role</a>
+        </li>
+        <li>
+          <a href="../create_group/create_group_example.html" title="Next document">Create Group Example</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+  <nav id="breadcrumbs">
+    <ul>
+      <li><a href="../index.html">DCM Cloud Security Guide</a></li>
+      <li>
+        <a href="create_role_example.html">Create Role Example</a>
+      </li> 
+    </ul>
+  </nav>
+  </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="create-access-rights">
+<span id="id1"></span><h1>Create Access Rights<a class="headerlink" href="#create-access-rights" title="Permalink to this headline">¶</a></h1>
+<p>Now create access rights for the <strong>Developer</strong> role.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">After a role is created there are no access rights defined in the role.</p>
+</div>
+<div class="section" id="edit-access-rights">
+<h2>Edit Access Rights<a class="headerlink" href="#edit-access-rights" title="Permalink to this headline">¶</a></h2>
+<p>Click on the <strong>Developer</strong> role to display the current access rights. Then click on the <strong>Edit Access Rights</strong> button.</p>
+<div class="figure">
+<img alt="../_images/add_access_rights1.png" src="../_images/add_access_rights1.png" />
+</div>
+</div>
+<div class="section" id="configure-access-rights">
+<h2>Configure Access Rights<a class="headerlink" href="#configure-access-rights" title="Permalink to this headline">¶</a></h2>
+<p>Now configure the desired access rights for the role. In this example custom access rights will be configured for the <strong>API Key</strong> resource.</p>
+<blockquote>
+<div><table style="text-align:left;width:25%;border: 1px solid black;border-collapse:collapse;" cols="03">
+
+<tr>
+<th style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;background-color:#d6d6d6">Resource</th>
+<th style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;background-color:#d6d6d6">Action</th>
+<th style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;background-color:#d6d6d6">Qualifier</th>
+</tr>
+
+<tr>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">API Key</td>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Access</td>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;">MINE</td>
+</tr>
+
+<tr>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">API Key</td>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Create User Key</td>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;">MINE</td>
+</tr>
+
+</table></div></blockquote>
+<ol class="arabic simple">
+<li>Click on the <strong>API Key</strong> checkbox and then the <strong>Custom Access</strong> radio button.</li>
+<li>Click on the <strong>Access</strong> checkbox and select the <strong>Mine</strong> qualifier.</li>
+<li>Click on the <strong>Create User Key</strong> checkbox and select the <strong>Mine</strong> qualifier.</li>
+</ol>
+<div class="figure">
+<img alt="../_images/add_access_rights2.png" src="../_images/add_access_rights2.png" />
+</div>
+</div>
+<div class="section" id="additional-access-rights">
+<h2>Additional Access Rights<a class="headerlink" href="#additional-access-rights" title="Permalink to this headline">¶</a></h2>
+<p>The access rights for the additional resources are created in the same way as was done in the step above for the <strong>API Key</strong> resource.</p>
+<p>When finished click on the <strong>Save Changes</strong> button.</p>
+<div class="figure">
+<img alt="../_images/add_access_rights3.png" src="../_images/add_access_rights3.png" />
+</div>
+</div>
+<div class="section" id="role-created">
+<h2>Role created<a class="headerlink" href="#role-created" title="Permalink to this headline">¶</a></h2>
+<div class="figure">
+<img alt="../_images/add_access_rights4.png" src="../_images/add_access_rights4.png" />
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/kraken.png" alt="Logo"/>
+            </a></p>
+<div id="searchbox" style="display: none">
+  <h3>Search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <div class="searchtip" style="font-size: 90%">Enter search terms.</div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+  <h3>This Page</h3>
+  <ul>
+<li><a class="reference internal" href="#">Create Access Rights</a><ul>
+<li><a class="reference internal" href="#edit-access-rights">Edit Access Rights</a></li>
+<li><a class="reference internal" href="#configure-access-rights">Configure Access Rights</a></li>
+<li><a class="reference internal" href="#additional-access-rights">Additional Access Rights</a></li>
+<li><a class="reference internal" href="#role-created">Role created</a></li>
+</ul>
+</li>
+</ul>
+
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../conceptual_view.html">Conceptual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../access_rights/access_rights.html">Access Rights</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../additonal_group_settings.html">Additional Group Settings</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="create_role_example.html">Create Role Example</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="create_role.html">Create Role</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Create Access Rights</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../create_group/create_group_example.html">Create Group Example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../planning/planning.html">Planning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../implementation/implementation.html">Implementation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../group_resource_management/group_resource_management.html">Resource Security by Group</a></li>
+</ul>
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+  <div class="related bottom">
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="create_role.html" title="Previous document">Create Role</a>
+        </li>
+        <li>
+          <a href="../create_group/create_group_example.html" title="Next document">Create Group Example</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+  <nav id="breadcrumbs">
+    <ul>
+      <li><a href="../index.html">DCM Cloud Security Guide</a></li>
+      <li>
+        <a href="create_role_example.html">Create Role Example</a>
+      </li> 
+    </ul>
+  </nav>
+  </div>
+  <footer id="pagefooter">&copy; 2015, Dell Software. Updated Apr 15, 2015.
+    
+
+
+  </footer>
+  </body>
+</html>
