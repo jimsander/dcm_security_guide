@@ -19,7 +19,7 @@ Resource type
 Action
 ~~~~~~
 
- The **Action**\ s determines what "actions" the Access Right will allow for the **Resource** type.  All actions can be allowed or specific actions can be allowed. The allowable actions differ depending upon the **Resource** type.
+ The **Action**\ s determine what "actions" the Access Right will allow for the **Resource** type.  All actions can be allowed or specific actions can be allowed. The allowable actions differ depending upon the **Resource** type.
 
  Refer to :ref:`Actions <access_rights_actions>` for the list of supported actions by resource type.
 

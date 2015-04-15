@@ -7,7 +7,7 @@ Dell Cloud Manager Cloud Security Guide
 ---------------------------------------
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 5
    :includehidden:
    :titlesonly:
   
@@ -16,6 +16,8 @@ Dell Cloud Manager Cloud Security Guide
    conceptual_view
    access_rights/access_rights
    additonal_group_settings
+   create_role/create_role_example
+   create_group/create_group_example
    planning/planning
    implementation/implementation
    group_resource_management/group_resource_management
