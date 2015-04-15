@@ -65,7 +65,7 @@ When finished click on the **Save Changes** button.
 Role created
 ~~~~~~~~~~~~
 
-.. figure:: images/add_access_rights4.png
+.. figure:: images/role_created.png
 
 | 
  
