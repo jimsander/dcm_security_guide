@@ -9,7 +9,7 @@ Create Role Example
 
 We will now go through an example of creating a role named **Developer**. The **Developer** role will contain the following access rights:
 
- .. raw:: html
+.. raw:: html
 
     <table style="text-align:left;width:25%;border: 1px solid black;border-collapse:collapse;" cols="03">
 

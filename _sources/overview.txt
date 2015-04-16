@@ -12,7 +12,7 @@ Dell Cloud Manager Cloud Security is tightly integrated with companies, cloud ac
 Companies
 ~~~~~~~~~
 
-* A company in Dell Cloud Manager is a logical entity that contains one or more cloud accounts.
+* A company in Dell Cloud Manager is a logical entity that contains one or more cloud accounts. The Dell Cloud Manager server supports multi-tenancy. Each customer's data is isolated and is invisible to the other customers. This data includes the Cloud Accounts and all cloud resources associated with those cloud accounts, as well the the Dell Cloud Manager objects which includes Users, Groups, Roles, Access Rights, etc.
 
 Cloud Accounts
 ~~~~~~~~~~~~~~

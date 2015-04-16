@@ -67,68 +67,97 @@
             
   <div class="section" id="resource-types">
 <span id="access-rights-resource-types"></span><h1>Resource Types<a class="headerlink" href="#resource-types" title="Permalink to this headline">¶</a></h1>
-<p>The <strong>Resource Type</strong> specifies the resources to be controlled (e.g. servers, machine images, volumes, etc.). For instance:</p>
-<table border="1" class="docutils">
-<colgroup>
-<col width="18%" />
-<col width="82%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Resource Type</th>
-<th class="head">Description</th>
+<p>The <strong>Resource Type</strong> specifies the resources to be controlled (e.g. servers, machine images, volumes, etc.).</p>
+<table style="text-align:left;width:25%;border: 1px solid black;border-collapse:collapse;" cols="02">
+
+<tr>
+<th style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;background-color:#d6d6d6">Resource Type</th>
+<th style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;background-color:#d6d6d6">Description </th>
 </tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td><strong>Account</strong></td>
-<td>Controls access and the allowable actions to account level API Keys</td>
+
+<tr>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Account</td>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to account level DCM API Keys</td>
 </tr>
-<tr class="row-odd"><td><strong>API Key</strong></td>
-<td>Controls access and the allowable actions to user API Keys</td>
+
+<tr>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">API Key</td>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to user level DCM API Keys</td>
 </tr>
-<tr class="row-even"><td><strong>Applications</strong></td>
-<td>Controls access and the allowable actions to stacks</td>
+
+<tr>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Applications</td>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to stacks</td>
 </tr>
-<tr class="row-odd"><td><strong>Agent Proxy</strong></td>
-<td>Controls access and the allowable actions to the Agent Proxy (required in some situations for the DCM Legacy Agent)</td>
+
+<tr>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Agent Proxy</td>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to the Agent Proxy (required in some situations for the DCM Legacy Agent)</td>
 </tr>
-<tr class="row-even"><td><strong>Blueprint</strong></td>
-<td>Controls access and the allowable actions to blueprints</td>
+
+<tr>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Blueprint</td>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to blueprints</td>
 </tr>
-<tr class="row-odd"><td><strong>Firewall</strong></td>
-<td>Controls access and the allowable actions to firewalls (Cloud Security Groups)</td>
+
+<tr>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Firewall</td>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to firewalls (Cloud Security Groups)</td>
 </tr>
-<tr class="row-even"><td><strong>Image</strong></td>
-<td>Controls access and the allowable actions to machine images</td>
+
+<tr>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Image</td>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to machine images</td>
 </tr>
-<tr class="row-odd"><td><strong>IP</strong></td>
-<td>Controls access and the allowable actions to IP Adresses (Elastic IPs, Fixed IPs)</td>
+
+<tr>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">IP</td>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to IP Adresses (Elastic IPs, Fixed IPs)</td>
 </tr>
-<tr class="row-even"><td><strong>Load Balancer</strong></td>
-<td>Controls access and the allowable actions to DCM supported Cloud Provider Load Balancers</td>
+
+<tr>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Load Balancer</td>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to DCM supported Cloud Provider Load Balancers</td>
 </tr>
-<tr class="row-odd"><td><strong>Network</strong></td>
-<td>Controls access and the allowable actions to virtual private cloud networks</td>
+
+<tr>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Network</td>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to virtual private cloud networks</td>
 </tr>
-<tr class="row-even"><td><strong>Relational Database</strong></td>
-<td>Controls access and the allowable actions to DCM supported Cloud Provider relational databases</td>
+
+<tr>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Relational Database</td>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to DCM supported Cloud Provider relational databases</td>
 </tr>
-<tr class="row-odd"><td><strong>Server</strong></td>
-<td>Controls access and the allowable actions to servers (virtual machines)</td>
+
+<tr>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Server</td>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to servers (virtual machines)</td>
 </tr>
-<tr class="row-even"><td><strong>Snapshot</strong></td>
-<td>Controls access and the allowable actions to snapshot (volume backups)</td>
+
+<tr>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Snapshot</td>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to snapshot (volume backups)</td>
 </tr>
-<tr class="row-odd"><td><strong>SSH Key</strong></td>
-<td>Controls access and the allowable actions to SSH keys</td>
+
+<tr>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">SSH Key</td>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to SSH keys</td>
 </tr>
-<tr class="row-even"><td><strong>Subnet</strong></td>
-<td>Controls access and the allowable actions to virtual private cloud network subnets</td>
+
+<tr>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Subnet</td>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to virtual private cloud network subnets</td>
 </tr>
-<tr class="row-odd"><td><strong>Volume</strong></td>
-<td>Controls access and the allowable actions to volumes</td>
+
+<tr>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Volume</td>
+<td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to volumes (block storage)</td>
 </tr>
-</tbody>
-</table>
+
+</table><div class="line-block">
+<div class="line"><br /></div>
+</div>
 </div>
 
 
@@ -196,7 +225,7 @@
     </ul>
   </nav>
   </div>
-  <footer id="pagefooter">&copy; 2015, Dell Software. Updated Apr 15, 2015.
+  <footer id="pagefooter">&copy; 2015, Dell Software. Updated Apr 16, 2015.
     
 
 
