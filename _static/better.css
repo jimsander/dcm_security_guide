@@ -107,6 +107,16 @@ a.headerlink {
 
 /* code styles */
 
+code { 
+    font-family: Monaco, Consolas, "Lucida Console", monospace;
+    background-color: #eee;
+    color: #333;
+    padding: 1px 2px 1px 2px;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    border-radius: 25px !IMPORTANT;
+}
+
 pre, tt {
     background-color: #eee;
     color: #333;
@@ -115,11 +125,16 @@ pre, tt {
 pre {
     font-family: Monaco, Consolas, "Lucida Console", monospace;
     margin: 1rem -5px;
-    padding: 5px;
+    padding: 10px 15px 10px 15px;
     border-left: none;
     border-right: none;
     font-size: 0.8rem;
     line-height: 1rem;
+    border-radius: 25px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    white-space: pre-wrap;
 }
 
 tt {
@@ -258,20 +273,37 @@ p.admonition-title:after {
 div.note {
     background-color: #eee;
     border: 1px solid #ccc;
+    border-radius: 25px !IMPORTANT;
+    padding: 5px 15px 5px 15px;
 }
 
 div.seealso {
     background-color: #ffc;
     border: 1px solid #ff6;
+    border-radius: 25px !IMPORTANT;
+    padding: 5px 15px 5px 15px;
 }
 
 div.topic {
     background-color: #eee;
 }
 
+div.attention {
+    background-color: #ffe4e4;
+    border: 1px solid #f66;
+    border-radius: 25px !IMPORTANT;
+    padding: 5px 15px 5px 15px;
+}
+
+.attention tt {
+    background: #efc2c2;
+}
+
 div.warning {
     background-color: #ffe4e4;
     border: 1px solid #f66;
+    border-radius: 25px !IMPORTANT;
+    padding: 5px 15px 5px 15px;
 }
 
 .warning tt {

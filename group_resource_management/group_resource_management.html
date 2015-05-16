@@ -25,10 +25,10 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="top" title="Dell Cloud Manager Cloud Security Guide" href="../index.html" />
-    <link rel="prev" title="Assign Users to Groups" href="../implementation/assign_users_to_groups.html" />
+    <link rel="prev" title="Resource Security by User" href="../user_resource_management/user_resource_management.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   </head>
-  <body>
+  <body role="document">
 <header id="pageheader">
 <h1>    
 <a href="../index.html ">Dell Cloud Manager Cloud Security Guide</a>
@@ -40,7 +40,7 @@
     <ul>
         <li>
           &larr;
-          <a href="../implementation/assign_users_to_groups.html" title="Previous document">Assign Users to Groups</a>
+          <a href="../user_resource_management/user_resource_management.html" title="Previous document">Resource Security by User</a>
         </li>
     </ul>
   </nav>
@@ -54,11 +54,12 @@
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="resource-security-by-group">
 <span id="group-resource-management"></span><h1>Resource Security by Group<a class="headerlink" href="#resource-security-by-group" title="Permalink to this headline">¶</a></h1>
-<p>Okay, so you have decided to control some of your resources at the Group level.  What comes next......</p>
+<p>One way to control access to Cloud Resources is by group. When resources are created from the Dell Cloud Manager console or from the Dell Cloud Manager API (using a user level API key), they can be assigned to a Dell Cloud Manager group (owning group).
+Access rights can then be configured for those resources and controlled by the <strong>GROUP</strong> qualifier. Users that do not belong to the Group that owns the resources will not be able to access and perform actions against those resources controlled by access rights with the <strong>GROUP</strong> qualifier.</p>
 <div class="toctree-wrapper compound">
 </div>
 </div>
@@ -67,7 +68,7 @@
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
             <p class="logo"><a href="../index.html">
               <img class="logo" src="../_static/kraken.png" alt="Logo"/>
@@ -94,6 +95,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../create_group/create_group_example.html">Create Group Example</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../planning/planning.html">Planning</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../implementation/implementation.html">Implementation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user_resource_management/user_resource_management.html">Resource Security by User</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="">Resource Security by Group</a><ul class="simple">
 </ul>
 </li>
@@ -108,7 +110,7 @@
     <ul>
         <li>
           &larr;
-          <a href="../implementation/assign_users_to_groups.html" title="Previous document">Assign Users to Groups</a>
+          <a href="../user_resource_management/user_resource_management.html" title="Previous document">Resource Security by User</a>
         </li>
     </ul>
   </nav>
@@ -118,7 +120,7 @@
     </ul>
   </nav>
   </div>
-  <footer id="pagefooter">&copy; 2015, Dell Software. Updated Apr 16, 2015.
+  <footer id="pagefooter">&copy; 2015, Dell Software. Updated May 16, 2015.
     
 
 
