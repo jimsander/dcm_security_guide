@@ -20,5 +20,6 @@ Dell Cloud Manager Cloud Security Guide
    create_group/create_group_example
    planning/planning
    implementation/implementation
+   user_resource_management/user_resource_management
    group_resource_management/group_resource_management
    
