@@ -133,7 +133,7 @@ pre {
 }
 
 div.highlight {
-    background-color: White;
+    background-color: inherit;
 }
 
 tt {
