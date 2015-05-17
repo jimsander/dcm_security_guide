@@ -107,16 +107,16 @@ a.headerlink {
 code { 
     font-family: Monaco, Consolas, "Lucida Console", monospace;
     background-color: Gainsboro;
-    color: #333;
-    padding: 1px 2px 1px 2px;
+    color: Black;
+    padding: 1px 10px 1px 10px;
     font-size: 0.8rem;
     line-height: 1.2rem;
-    border-radius: 25px !IMPORTANT;
+    border-radius: 12px !IMPORTANT;
 }
 
 pre, tt {
     background-color: #eee;
-    color: #333;
+    color: Black;
 }
 
 pre {
@@ -125,11 +125,15 @@ pre {
     padding: 10px 15px 10px 15px;
     font-size: 0.8rem;
     line-height: 1rem;
-    border-radius: 25px;
+    border-radius: 12px;
     border-style: none;
     border-width: 2px;
     white-space: pre-wrap;
     box-shadow: 8px 8px 5px #888888;
+}
+
+div.highlight {
+    background-color: White;
 }
 
 tt {
@@ -268,7 +272,7 @@ p.admonition-title:after {
 div.note {
     background-color: PowderBlue;
     border: 1px solid #ccc;
-    border-radius: 25px !IMPORTANT;
+    border-radius: 12px !IMPORTANT;
     padding: 5px 15px 5px 15px;
     box-shadow: 8px 8px 5px #888888;
 }
@@ -276,7 +280,7 @@ div.note {
 div.seealso {
     background-color: #ffc;
     border: 1px solid #ff6;
-    border-radius: 25px !IMPORTANT;
+    border-radius: 12px !IMPORTANT;
     padding: 5px 15px 5px 15px;
     box-shadow: 8px 8px 5px #888888;
 }
@@ -295,7 +299,7 @@ img {
 div.attention {
     background-color: #ffe4e4;
     border: 1px solid #f66;
-    border-radius: 25px !IMPORTANT;
+    border-radius: 12px !IMPORTANT;
     padding: 5px 15px 5px 15px;
     box-shadow: 8px 8px 5px #888888;
 }
@@ -307,7 +311,7 @@ div.attention {
 div.warning {
     background-color: #ffe4e4;
     border: 1px solid #f66;
-    border-radius: 25px !IMPORTANT;
+    border-radius: 12px !IMPORTANT;
     padding: 5px 15px 5px 15px;
     box-shadow: 8px 8px 5px #888888;
 }
