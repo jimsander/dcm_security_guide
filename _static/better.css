@@ -23,6 +23,7 @@ a:visited {
 
 a:hover {
     text-decoration: underline;
+    font-weight: bold;
 }
 
 a.toc-backref {
@@ -108,10 +109,9 @@ code {
     font-family: Monaco, Consolas, "Lucida Console", monospace;
     background-color: Gainsboro;
     color: Black;
-    padding: 1px 10px 1px 10px;
+    padding: 1px 2px 1px 2px;
     font-size: 0.8rem;
     line-height: 1.2rem;
-    border-radius: 12px !IMPORTANT;
 }
 
 pre, tt {
@@ -271,6 +271,14 @@ p.admonition-title:after {
 
 div.note {
     background-color: PowderBlue;
+    border: 1px solid #ccc;
+    border-radius: 12px !IMPORTANT;
+    padding: 5px 15px 5px 15px;
+    box-shadow: 8px 8px 5px #888888;
+}
+
+div.tip {
+    background-color: LightSkyBlue;
     border: 1px solid #ccc;
     border-radius: 12px !IMPORTANT;
     padding: 5px 15px 5px 15px;
