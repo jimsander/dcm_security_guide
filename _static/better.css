@@ -275,6 +275,7 @@ div.note {
     border-radius: 12px !IMPORTANT;
     padding: 5px 15px 5px 15px;
     box-shadow: 8px 8px 5px #888888;
+    display: inline-block;
 }
 
 div.tip {
@@ -283,6 +284,7 @@ div.tip {
     border-radius: 12px !IMPORTANT;
     padding: 5px 15px 5px 15px;
     box-shadow: 8px 8px 5px #888888;
+    display: inline-block;
 }
 
 div.seealso {
@@ -291,6 +293,7 @@ div.seealso {
     border-radius: 12px !IMPORTANT;
     padding: 5px 15px 5px 15px;
     box-shadow: 8px 8px 5px #888888;
+    display: inline-block;
 }
 
 div.topic {
@@ -310,6 +313,7 @@ div.attention {
     border-radius: 12px !IMPORTANT;
     padding: 5px 15px 5px 15px;
     box-shadow: 8px 8px 5px #888888;
+    display: inline-block;
 }
 
 .attention tt {
@@ -322,6 +326,7 @@ div.warning {
     border-radius: 12px !IMPORTANT;
     padding: 5px 15px 5px 15px;
     box-shadow: 8px 8px 5px #888888;
+    display: inline-block;
 }
 
 .warning tt {
