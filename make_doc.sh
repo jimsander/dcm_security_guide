@@ -67,6 +67,8 @@ rm -Rf *.inv  || true
 # Copy the html from the Build directory to the GitHub pages directory
 cp -Rp ../${BUILDDIR}/html/* ./
 
+cp _static/dcm_cloud_logo.png ./
+
 cd ../
 
 echo "Build of the Dell Cloud Manager Security Guide GitHub pages is finished. The HTML pages are in ${GHPAGESDIR}."
