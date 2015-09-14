@@ -7,7 +7,8 @@
 Overview
 --------
 
-Dell Cloud Manager Cloud Security is tightly integrated with companies, cloud accounts, groups, roles and access rights.
+Dell Cloud Manager Cloud Security is tightly integrated with users, groups, roles, access rights, companies and cloud accounts.
+What a user can see and change is controlled by a group that the user belongs to and the role assigned to that group.
 
 Companies
 ~~~~~~~~~

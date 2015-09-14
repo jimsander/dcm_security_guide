@@ -29,7 +29,7 @@ The **Resource Type** specifies the resources to be controlled (e.g. servers, ma
     </tr>
 
     <tr>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Applications</td>
+    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">STACK</td>
     <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to stacks</td>
     </tr>
 

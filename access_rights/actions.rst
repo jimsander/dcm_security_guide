@@ -31,7 +31,7 @@ The **Actions** determine what “actions” the Access Right will allow for the
     </tr>
 
     <tr>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Application</td>
+    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">STACK</td>
     <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;">Access<br>
     Configure<br>
     Terminate
@@ -69,7 +69,7 @@ The **Actions** determine what “actions” the Access Right will allow for the
 
     <tr>
     <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Image</td>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;">Access<br>
+    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Access<br>
     Access Public<br>
     Configure<br>
     Define Server<br>
@@ -100,6 +100,7 @@ The **Actions** determine what “actions” the Access Right will allow for the
     <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;">Access<br>
     AddDataCenter<br>
     AddListener<br>
+    AddServer<br>
     Configure<br>
     Create<br>
     Delete<br>
@@ -126,7 +127,6 @@ The **Actions** determine what “actions” the Access Right will allow for the
     Change Password<br>
     Configure<br>
     Create<br>
-    Delete<br>
     Manage Network<br>
     Terminate
     </td>
@@ -139,6 +139,7 @@ The **Actions** determine what “actions” the Access Right will allow for the
     Image<br>
     ManageBilling<br>
     ManageOwnership<br>
+    Manage Users<br>
     Monitor<br>
     Pause<br>
     Reboot<br>
@@ -173,7 +174,7 @@ The **Actions** determine what “actions” the Access Right will allow for the
     </tr>
 
     <tr>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Network</td>
+    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Subnet</td>
     <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;">Access<br>
     Configure<br>
     Create<br>
