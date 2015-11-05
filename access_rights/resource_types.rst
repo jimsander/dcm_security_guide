@@ -7,99 +7,35 @@
 Resource Types
 --------------
 
-The **Resource Type** specifies the resources to be controlled (e.g. servers, machine images, volumes, etc.). 
+The **Actions** determine what “actions” the Access Right will allow for the Resource type. All actions can be allowed or specific actions can be allowed. The allowable actions differ depending upon the Resource type.
 
-.. raw:: html
+.. include:: actions/Account.rst
 
-    <table style="text-align:left;width:25%;border: 1px solid black;border-collapse:collapse;" cols="02">
+.. include:: actions/API_Key.rst
 
-    <tr>
-    <th style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;background-color:#d6d6d6">Resource Type</th>
-    <th style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;background-color:#d6d6d6">Description </th>
-    </tr>
+.. include:: actions/Blueprint.rst
 
-    <tr>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Account</td>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to account level DCM API Keys</td>
-    </tr>
+.. include:: actions/Catalog.rst
 
-    <tr>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">API Key</td>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to user level DCM API Keys</td>
-    </tr>
+.. include:: actions/Firewall.rst
 
-    <tr>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">STACK</td>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to stacks</td>
-    </tr>
+.. include:: actions/Image.rst
 
-    <tr>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Agent Proxy</td>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to the Agent Proxy (required in some situations for the DCM Legacy Agent)</td>
-    </tr>
+.. include:: actions/IP.rst
 
-    <tr>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Blueprint</td>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to blueprints</td>
-    </tr>
+.. include:: actions/Load_Balancer.rst
 
-    <tr>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Firewall</td>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to firewalls (Cloud Security Groups)</td>
-    </tr>
+.. include:: actions/Network.rst
 
-    <tr>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Image</td>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to machine images</td>
-    </tr>
+.. include:: actions/Relational_Database.rst
 
-    <tr>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">IP</td>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to IP Adresses (Elastic IPs, Fixed IPs)</td>
-    </tr>
+.. include:: actions/Server.rst
 
-    <tr>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Load Balancer</td>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to DCM supported Cloud Provider Load Balancers</td>
-    </tr>
+.. include:: actions/Snapshot.rst
 
-    <tr>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Network</td>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to virtual private cloud networks</td>
-    </tr>
+.. include:: actions/SSH_Key.rst
 
-    <tr>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Relational Database</td>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to DCM supported Cloud Provider relational databases</td>
-    </tr>
+.. include:: actions/Subnet.rst
 
-    <tr>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Server</td>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to servers (virtual machines)</td>
-    </tr>
+.. include:: actions/Volume.rst
 
-    <tr>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Snapshot</td>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to snapshot (volume backups)</td>
-    </tr>
-
-    <tr>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">SSH Key</td>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to SSH keys</td>
-    </tr>
-
-    <tr>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Subnet</td>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to virtual private cloud network subnets</td>
-    </tr>
-
-    <tr>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;width:15%;white-space:nowrap;">Volume</td>
-    <td style="text-align:left !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;white-space:nowrap;">Controls access and the allowable actions to volumes (block storage)</td>
-    </tr>
-
-    </table>
-
-|
-
-    

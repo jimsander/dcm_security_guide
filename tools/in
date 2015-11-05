@@ -1,0 +1,117 @@
+####  Account
+*  Access - Provide allowable control of Account Level API Keys
+
+note: The most important resource per account. If access rights of a role are to be customized, `Account:Access` to the user must be  granted.  Without this resource enabled for a user, all other access rights are blocked.
+note: *role* must have `Full Access` for user to create **Account level keys**
+
+
+#### API Key
+*  Access - Provide allowable control of User Level API Key
+*  Create User Key - Create API Key</br><div class="jdsf">Qualifier Ignored</div>
+
+note: A user will never be allowed to see any user key than their own. 
+
+####  Blueprint 
+A predefined defined template loaded in the DCM Catalog
+
+*  Access - Provide allowable control of Blueprints
+*  Launch - Deploy a stack from a blueprint 
+
+####  Image 
+*  Access - Provide allowable control of Images
+*  AccessPublic -Search Public Images 
+*  Configure -  Modify image metadata</br><ul><li>name<li>description<li>agent info</ul> 
+*  Delete - Delete Image
+*  DefineServer - Create Server from Account Library </br><div class="jdsf">Qualifier Ignored</div>
+*  DefineServerFromPublic - Create Server from public Library </br><div class="jdsf">Qualifier Ignored</div>
+*  ManageBilling - Change Budget Code of existing `Image`
+*  ManageOwnership - Change Group Ownership of existing `Image`
+*  ShareLocal - Share with other Accounts 
+*  SharePublic - Share publicly with Cloud Provider
+
+####  IP
+*  Release - Release IP back into the account IP pool 
+*  Assign - Attach IP to a `Server`: Qualifier MUST be `Any`<ul><li>no server presented if not `Any`</li><li>Action `Release` disabled if not `Any`</li></ul>
+*  Create - Create an IP to be attached/assigned </br><div class="jdsf">Qualifier Ignored</div>
+*  Configure - Modify metadata </br><ul><li>name<li>description</ul>
+*  Delete - Remove IP from account IP pool
+*  Forward - Allow IP forwarding </br><div class="jdsf">Cloud Dependent</div>
+*  StopForward - Allow disablement of allow IP forwarding </br><div class="jdsf">Cloud Dependent</div>
+
+####  Load Balancer 
+*  AddDataCenter - Add DataCenter </br>Requires `Configure`
+*  AddListener - Add Forwarding Rules
+*  AddServer - Add Server to `Load Balancer`
+*  Configure - Modify metadata </br><ul><li>name<li>description<li>datacenters</ul>
+*  Create - Create `Load Balancer` </br><div class="jdsf">Qualifier Ignored</div>
+*  Delete - Delete the `Load Balancer`
+*  EditListener - Modify existing Forwarding Rules
+*  RemoveDataCenter - Remove DataCenter </br>Requires `Configure`
+*  RemoveServer - Remove Server to `Load Balancer`
+
+####  Network 
+*  Configure - Modify metadata  </br><ul><li>name<li>description<li>datacenters</ul>
+*  Create - Create a `Network` </br><div class="jdsf">Qualifier Ignored</div>
+*  Delete - Delete a `Network` 
+*  ManageBilling - Change Budget Code of existing `Network`
+*  ManageOwnership - Change Group Ownership of existing `Network`
+
+####  Relational Database 
+*  Configure - Modify metadata  </br><ul><li>name<li>description<li>datacenters</ul>
+*  Create - Create a `Relation DB Management System` </br><div class="jdsf">Qualifier Ignored</div>
+*  Terminate - Stop and Delete the Relational Database object
+*  ManageNetwork - Allow Grant/Revoke Nework Access Management
+*  ChangePassword - Change administrator password to Relational Database object
+
+####  Server
+*  Configure - Modify existing server</br><ul><li>product<li>server-name<li>users</br>(Agent Enabled Only)</ul>
+*  Image - Make Image from Server
+*  ManageBilling - Change Budget Code of existing `Server`
+*  ManageOwnership - Change Group Ownership of existing `Server`
+*  ManageUsers - Add/Remove DCM Users to `Server`</br>(Agent Enabled Only)
+*  Monitor - Monitor **TBD**
+*  Pause - Control Server with Pause
+*  Reboot - Control Server with Reboot
+*  Resume - Control Server with Resume
+*  Start - Control Server with Start
+*  Stop - Control Server with Stop
+*  Suspend - Control Server with Suspend
+*  Terminate - Control Server with Terminate
+*  UnPause -  Control Server with UnPause
+*  ViewLogs - View DCM Agent Logs 
+*  ViewPassword - View the vm admin logon credentials
+
+####  Snapshot 
+*  Configure - Modify metadata </br><ul><li>name<li>description<li>datacenters</ul>
+*  Create - Create a `Snapshot` </br><div class="jdsf">Qualifier Ignored</div>
+*  CreateVolume - Create `Volume` from `Snapshot` 
+*  Delete - Delete a `Snapshot`
+*  ShareLocal - Share with other Accounts
+*  SharePublic - Share publicly with Cloud Provider
+
+####  SSH Key 
+*  Create - Create an `SSH Key` </br><div class="jdsf">Qualifier Ignored</div>
+#
+####  Stack 
+*  Access - View Blueprints
+*  Configure - Modify a running stack
+*  Terminate - Destroy a running stack
+
+note: Much like the relationship between the ACLs of `Server` and `Image`, rights to **Launch** are granted in the `Resource: Blueprint`
+
+####  Subnet 
+*  Configure - Modify metadata </br><ul><li>name<li>description<li>datacenters</ul>
+*  Create - Create a `Subnet` </br><div class="jdsf">Qualifier Ignored</div>
+*  Delete - Delete a `Subnet` 
+*  ManageBilling - Change Budget Code of existing `Subnet`
+*  ManageOwnership - Change Group Ownership of existing `Subnet`
+
+####  Volume 
+*  Attach - Attach the `Volume` to a `Server`
+*  Configure - Modify metadata </br><ul><li>name<li>description<li>datacenters</ul>
+*  Create - Create a `Volume` </br><div class="jdsf">Qualifier Ignored</div>
+*  Delete - Delete the `Volume`
+*  Detach - Detach the `Volume` from `Server`
+*  ManageBilling - Change Budget Code of existing `Volume`
+*  ManageOwnership - Change Group Ownership of existing `Volume`
+*  Snapshot - Make snapshot of volume 
