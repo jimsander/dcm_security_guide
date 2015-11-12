@@ -47,10 +47,6 @@
     <td width="25%" class="jdsr">Snapshot </td>
     <td width="*" class="jdsl">Make snapshot of volume </td>
   </tr>
-  <tr>
-    <td width="25%" class="jdsr"> A: [Accounts, User, Group and Role relationships](https://dcm.enstratius.com/help/HelpGuide/Default.htm#Conceptual%20</td>
-    <td width="*" class="jdsl">%20Users,%20groups,%20and%20roles.htm)</td>
-  </tr>
   </table>
   </BR>
   <!-- END OF Volume.rst -->
