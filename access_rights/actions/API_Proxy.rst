@@ -18,6 +18,9 @@
   </tr>
   </table>
 
+ </BR>
+
 .. note:: (API Proxy) A user will never be allowed to see any user key than their own, AND 
  Role must have `Full Access` for user to create **Account level keys**
+
 

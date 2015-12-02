@@ -12,12 +12,20 @@
     <th width="*" class="jdsl" style="color: white; background-color: #007DB8;line-height:12px;">Description</th>
   </tr>
   <tr>
-    <th width="25%" class="jdsr" rowspan="17"">Server</th>
+    <th width="25%" class="jdsr" rowspan="20"">Server</th>
   </tr>
 
   <tr>
+    <td width="25%" class="jdsr">Access </td>
+    <td width="*" class="jdsl">Allow management of Server</td>
+  </tr>
+  <tr>
+    <td width="25%" class="jdsr">AddEndpoint </td>
+    <td width="*" class="jdsl">**PENDING DESCRIPTION**</td>
+  </tr>
+  <tr>
     <td width="25%" class="jdsr">Configure </td>
-    <td width="*" class="jdsl">Modify existing server</br><ul><li>product<li>server-name<li>users</br>(Agent Enabled Only)</ul></td>
+    <td width="*" class="jdsl">Modify existing server</br><ul><li>product<li>server-name<li>users - (DCM Agent Enabled Only)</ul></td>
   </tr>
   <tr>
     <td width="25%" class="jdsr">Image </td>
@@ -46,6 +54,10 @@
   <tr>
     <td width="25%" class="jdsr">Reboot </td>
     <td width="*" class="jdsl">Control Server with Reboot</td>
+  </tr>
+  <tr>
+    <td width="25%" class="jdsr">RemoveEndpoint </td>
+    <td width="*" class="jdsl">**PENDING DESCRIPTION**</td>
   </tr>
   <tr>
     <td width="25%" class="jdsr">Resume </td>
@@ -80,5 +92,8 @@
     <td width="*" class="jdsl">View the vm admin logon credentials</td>
   </tr>
   </table>
-  </BR>
   <!-- END OF Server.rst -->
+
+.. note:: DCM Agent Enabled servers provide managements of Users 
+
+

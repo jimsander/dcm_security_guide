@@ -12,16 +12,20 @@
     <th width="*" class="jdsl" style="color: white; background-color: #007DB8;line-height:12px;">Description</th>
   </tr>
   <tr>
-    <th width="25%" class="jdsr" rowspan="7"">Snapshot</th>
+    <th width="25%" class="jdsr" rowspan="8"">Snapshot</th>
   </tr>
 
+  <tr>
+    <td width="25%" class="jdsr">Access </td>
+    <td width="*" class="jdsl">Allow management of Snapshot</td>
+  </tr>
   <tr>
     <td width="25%" class="jdsr">Configure </td>
     <td width="*" class="jdsl">Modify metadata </br><ul><li>name<li>description<li>datacenters</ul></td>
   </tr>
   <tr>
     <td width="25%" class="jdsr">Create </td>
-    <td width="*" class="jdsl">Create a `Snapshot` </br><div class="jdsf">Qualifier Ignored</div></td>
+    <td width="*" class="jdsl">Create a `Snapshot` </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div></td>
   </tr>
   <tr>
     <td width="25%" class="jdsr">CreateVolume </td>
@@ -40,5 +44,6 @@
     <td width="*" class="jdsl">Share publicly with Cloud Provider</td>
   </tr>
   </table>
-  </BR>
   <!-- END OF Snapshot.rst -->
+
+

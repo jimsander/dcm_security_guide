@@ -12,7 +12,7 @@
     <th width="*" class="jdsl" style="color: white; background-color: #007DB8;line-height:12px;">Description</th>
   </tr>
   <tr>
-    <th width="25%" class="jdsr" rowspan="4"">Catalog</th>
+    <th width="25%" class="jdsr" rowspan="4"">Stack</th>
   </tr>
 
   <tr>
@@ -28,5 +28,8 @@
     <td width="*" class="jdsl">Destroy a running stack</td>
   </tr>
   </table>
-  </BR>
-  <!-- END OF Catalog.rst -->
+  <!-- END OF Stack.rst -->
+
+.. note:: Much like the relationship between the ACLs of *Server* and *Image*, rights to **Launch** are granted in the *Resource: Blueprint* 
+
+

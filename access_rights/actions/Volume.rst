@@ -12,9 +12,13 @@
     <th width="*" class="jdsl" style="color: white; background-color: #007DB8;line-height:12px;">Description</th>
   </tr>
   <tr>
-    <th width="25%" class="jdsr" rowspan="9"">Volume</th>
+    <th width="25%" class="jdsr" rowspan="10"">Volume</th>
   </tr>
 
+  <tr>
+    <td width="25%" class="jdsr">Access </td>
+    <td width="*" class="jdsl">Allow management of Volume</td>
+  </tr>
   <tr>
     <td width="25%" class="jdsr">Attach </td>
     <td width="*" class="jdsl">Attach the `Volume` to a `Server`</td>
@@ -25,7 +29,7 @@
   </tr>
   <tr>
     <td width="25%" class="jdsr">Create </td>
-    <td width="*" class="jdsl">Create a `Volume` </br><div class="jdsf">Qualifier Ignored</div></td>
+    <td width="*" class="jdsl">Create a `Volume` </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div></td>
   </tr>
   <tr>
     <td width="25%" class="jdsr">Delete </td>

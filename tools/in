@@ -1,70 +1,75 @@
 ####  Account
-*  Access - Provide allowable control of Account Level API Keys
-
-note: The most important resource per account. If access rights of a role are to be customized, `Account:Access` to the user must be  granted.  Without this resource enabled for a user, all other access rights are blocked.
-note: *role* must have `Full Access` for user to create **Account level keys**
-
+*  Access - Allow management of Account Level API Keys
+note: *role* must have *Full Access* for user to create **Account level keys**
 
 #### API Key
-*  Access - Provide allowable control of User Level API Key
-*  Create User Key - Create API Key</br><div class="jdsf">Qualifier Ignored</div>
-
+*  Access - Allow management of User Level API Key
+*  Create User Key - Create API Key</br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div>
 note: A user will never be allowed to see any user key than their own. 
 
 ####  Blueprint 
-A predefined defined template loaded in the DCM Catalog
 
-*  Access - Provide allowable control of Blueprints
+*  Access - Allow management of Blueprints
 *  Launch - Deploy a stack from a blueprint 
 
+####  Firewall
+*  Access - Allow management of Images
+note: New Attribute -- PENDING DESCRIPTION
+
 ####  Image 
-*  Access - Provide allowable control of Images
+*  Access - Allow management of Images
 *  AccessPublic -Search Public Images 
 *  Configure -  Modify image metadata</br><ul><li>name<li>description<li>agent info</ul> 
 *  Delete - Delete Image
-*  DefineServer - Create Server from Account Library </br><div class="jdsf">Qualifier Ignored</div>
-*  DefineServerFromPublic - Create Server from public Library </br><div class="jdsf">Qualifier Ignored</div>
+*  DefineServer - Create Server from Account Library </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div>
+*  DefineServerFromPublic - Create Server from public Library </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div>
 *  ManageBilling - Change Budget Code of existing `Image`
 *  ManageOwnership - Change Group Ownership of existing `Image`
 *  ShareLocal - Share with other Accounts 
 *  SharePublic - Share publicly with Cloud Provider
 
 ####  IP
-*  Release - Release IP back into the account IP pool 
+*  Access - Allow management of IP Addresses
 *  Assign - Attach IP to a `Server`: Qualifier MUST be `Any`<ul><li>no server presented if not `Any`</li><li>Action `Release` disabled if not `Any`</li></ul>
-*  Create - Create an IP to be attached/assigned </br><div class="jdsf">Qualifier Ignored</div>
 *  Configure - Modify metadata </br><ul><li>name<li>description</ul>
+*  Create - Create an IP to be attached/assigned </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div>
 *  Delete - Remove IP from account IP pool
 *  Forward - Allow IP forwarding </br><div class="jdsf">Cloud Dependent</div>
+*  Release - Release IP back into the account IP pool 
 *  StopForward - Allow disablement of allow IP forwarding </br><div class="jdsf">Cloud Dependent</div>
 
 ####  Load Balancer 
+*  Access - Allow management of Load Balancer
 *  AddDataCenter - Add DataCenter </br>Requires `Configure`
 *  AddListener - Add Forwarding Rules
 *  AddServer - Add Server to `Load Balancer`
 *  Configure - Modify metadata </br><ul><li>name<li>description<li>datacenters</ul>
-*  Create - Create `Load Balancer` </br><div class="jdsf">Qualifier Ignored</div>
+*  Create - Create `Load Balancer` </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div>
 *  Delete - Delete the `Load Balancer`
 *  EditListener - Modify existing Forwarding Rules
 *  RemoveDataCenter - Remove DataCenter </br>Requires `Configure`
 *  RemoveServer - Remove Server to `Load Balancer`
 
 ####  Network 
+*  Access - Allow management of Network
 *  Configure - Modify metadata  </br><ul><li>name<li>description<li>datacenters</ul>
-*  Create - Create a `Network` </br><div class="jdsf">Qualifier Ignored</div>
+*  Create - Create a `Network` </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div>
 *  Delete - Delete a `Network` 
 *  ManageBilling - Change Budget Code of existing `Network`
 *  ManageOwnership - Change Group Ownership of existing `Network`
 
 ####  Relational Database 
+*  Access - Allow management of Relational Database
+*  ChangePassword - Change administrator password to Relational Database object
 *  Configure - Modify metadata  </br><ul><li>name<li>description<li>datacenters</ul>
-*  Create - Create a `Relation DB Management System` </br><div class="jdsf">Qualifier Ignored</div>
+*  Create - Create a `Relation DB Management System` </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div>
 *  Terminate - Stop and Delete the Relational Database object
 *  ManageNetwork - Allow Grant/Revoke Nework Access Management
-*  ChangePassword - Change administrator password to Relational Database object
 
 ####  Server
-*  Configure - Modify existing server</br><ul><li>product<li>server-name<li>users</br>(Agent Enabled Only)</ul>
+*  Access - Allow management of Server
+*  AddEndpoint - **PENDING DESCRIPTION**
+*  Configure - Modify existing server</br><ul><li>product<li>server-name<li>users - (DCM Agent Enabled Only)</ul>
 *  Image - Make Image from Server
 *  ManageBilling - Change Budget Code of existing `Server`
 *  ManageOwnership - Change Group Ownership of existing `Server`
@@ -72,6 +77,7 @@ A predefined defined template loaded in the DCM Catalog
 *  Monitor - Monitor **TBD**
 *  Pause - Control Server with Pause
 *  Reboot - Control Server with Reboot
+*  RemoveEndpoint - **PENDING DESCRIPTION**
 *  Resume - Control Server with Resume
 *  Start - Control Server with Start
 *  Stop - Control Server with Stop
@@ -80,38 +86,44 @@ A predefined defined template loaded in the DCM Catalog
 *  UnPause -  Control Server with UnPause
 *  ViewLogs - View DCM Agent Logs 
 *  ViewPassword - View the vm admin logon credentials
+note: DCM Agent Enabled servers provide managements of Users
 
-####  Snapshot 
+####  Snapshot
+*  Access - Allow management of Snapshot
 *  Configure - Modify metadata </br><ul><li>name<li>description<li>datacenters</ul>
-*  Create - Create a `Snapshot` </br><div class="jdsf">Qualifier Ignored</div>
+*  Create - Create a `Snapshot` </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div>
 *  CreateVolume - Create `Volume` from `Snapshot` 
 *  Delete - Delete a `Snapshot`
 *  ShareLocal - Share with other Accounts
 *  SharePublic - Share publicly with Cloud Provider
 
-####  SSH Key 
-*  Create - Create an `SSH Key` </br><div class="jdsf">Qualifier Ignored</div>
-#
-####  Stack 
+####  SSH Key
+*  Access - Allow management of SSH Key 
+*  Create - Create an `SSH Key` </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div>
+
+####  Stack
 *  Access - View Blueprints
 *  Configure - Modify a running stack
 *  Terminate - Destroy a running stack
+note: Much like the relationship between the ACLs of *Server* and *Image*, rights to **Launch** are granted in the *Resource: Blueprint*
 
-note: Much like the relationship between the ACLs of `Server` and `Image`, rights to **Launch** are granted in the `Resource: Blueprint`
-
-####  Subnet 
+####  Subnet
+*  Access - Allow management of Subnet
 *  Configure - Modify metadata </br><ul><li>name<li>description<li>datacenters</ul>
-*  Create - Create a `Subnet` </br><div class="jdsf">Qualifier Ignored</div>
+*  Create - Create a `Subnet` </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div>
 *  Delete - Delete a `Subnet` 
 *  ManageBilling - Change Budget Code of existing `Subnet`
 *  ManageOwnership - Change Group Ownership of existing `Subnet`
 
 ####  Volume 
+*  Access - Allow management of Volume
 *  Attach - Attach the `Volume` to a `Server`
 *  Configure - Modify metadata </br><ul><li>name<li>description<li>datacenters</ul>
-*  Create - Create a `Volume` </br><div class="jdsf">Qualifier Ignored</div>
+*  Create - Create a `Volume` </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div>
 *  Delete - Delete the `Volume`
 *  Detach - Detach the `Volume` from `Server`
 *  ManageBilling - Change Budget Code of existing `Volume`
 *  ManageOwnership - Change Group Ownership of existing `Volume`
 *  Snapshot - Make snapshot of volume 
+
+

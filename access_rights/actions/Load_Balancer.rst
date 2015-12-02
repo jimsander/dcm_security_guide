@@ -12,9 +12,13 @@
     <th width="*" class="jdsl" style="color: white; background-color: #007DB8;line-height:12px;">Description</th>
   </tr>
   <tr>
-    <th width="25%" class="jdsr" rowspan="10"">Load Balancer</th>
+    <th width="25%" class="jdsr" rowspan="11"">Load Balancer</th>
   </tr>
 
+  <tr>
+    <td width="25%" class="jdsr">Access </td>
+    <td width="*" class="jdsl">Allow management of Load Balancer</td>
+  </tr>
   <tr>
     <td width="25%" class="jdsr">AddDataCenter </td>
     <td width="*" class="jdsl">Add DataCenter </br>Requires `Configure`</td>
@@ -33,7 +37,7 @@
   </tr>
   <tr>
     <td width="25%" class="jdsr">Create </td>
-    <td width="*" class="jdsl">Create `Load Balancer` </br><div class="jdsf">Qualifier Ignored</div></td>
+    <td width="*" class="jdsl">Create `Load Balancer` </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div></td>
   </tr>
   <tr>
     <td width="25%" class="jdsr">Delete </td>
@@ -52,5 +56,6 @@
     <td width="*" class="jdsl">Remove Server to `Load Balancer`</td>
   </tr>
   </table>
-  </BR>
   <!-- END OF Load_Balancer.rst -->
+
+

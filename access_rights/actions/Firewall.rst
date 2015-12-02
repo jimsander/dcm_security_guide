@@ -12,20 +12,18 @@
     <th width="*" class="jdsl" style="color: white; background-color: #007DB8;line-height:12px;">Description</th>
   </tr>
   <tr>
-    <th width="25%" class="jdsr" rowspan="3"">API Key</th>
+    <th width="25%" class="jdsr" rowspan="3"">Firewall</th>
   </tr>
 
   <tr>
     <td width="25%" class="jdsr">Access </td>
-    <td width="*" class="jdsl">Allow management of User Level API Key</td>
+    <td width="*" class="jdsl">Allow management of Images</td>
   </tr>
   <tr>
-    <td width="25%" class="jdsr">Create User Key </td>
-    <td width="*" class="jdsl">Create API Key</br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div></td>
+    <td width="25%" class="jdsr">note: New Attribute </td>
+    <td width="*" class="jdsl">- PENDING DESCRIPTION</td>
   </tr>
   </table>
-  <!-- END OF API_Key.rst -->
-
-.. note:: A user will never be allowed to see any user key than their own.  
+  <!-- END OF Firewall.rst -->
 
 

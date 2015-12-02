@@ -17,7 +17,7 @@
 
   <tr>
     <td width="25%" class="jdsr">Access </td>
-    <td width="*" class="jdsl">View Images</td>
+    <td width="*" class="jdsl">Allow management of Images</td>
   </tr>
   <tr>
     <td width="25%" class="jdsr">AccessPublic </td>
@@ -33,11 +33,11 @@
   </tr>
   <tr>
     <td width="25%" class="jdsr">DefineServer </td>
-    <td width="*" class="jdsl">Create Server from Account Library : </br><div class="jdsf">Qualifier Ignored</div></td>
+    <td width="*" class="jdsl">Create Server from Account Library </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div></td>
   </tr>
   <tr>
     <td width="25%" class="jdsr">DefineServerFromPublic </td>
-    <td width="*" class="jdsl">Create Server from public Library : </br><div class="jdsf">Qualifier Ignored</div></td>
+    <td width="*" class="jdsl">Create Server from public Library </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div></td>
   </tr>
   <tr>
     <td width="25%" class="jdsr">ManageBilling </td>
@@ -56,5 +56,6 @@
     <td width="*" class="jdsl">Share publicly with Cloud Provider</td>
   </tr>
   </table>
-  </BR>
   <!-- END OF Image.rst -->
+
+

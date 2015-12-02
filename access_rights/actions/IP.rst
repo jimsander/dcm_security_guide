@@ -12,24 +12,24 @@
     <th width="*" class="jdsl" style="color: white; background-color: #007DB8;line-height:12px;">Description</th>
   </tr>
   <tr>
-    <th width="25%" class="jdsr" rowspan="8"">IP</th>
+    <th width="25%" class="jdsr" rowspan="9"">IP</th>
   </tr>
 
   <tr>
-    <td width="25%" class="jdsr">Release </td>
-    <td width="*" class="jdsl">Release IP back into the account IP pool </td>
+    <td width="25%" class="jdsr">Access </td>
+    <td width="*" class="jdsl">Allow management of IP Addresses</td>
   </tr>
   <tr>
     <td width="25%" class="jdsr">Assign </td>
-    <td width="*" class="jdsl">Attach IP to a `Server` : Qualifier MUST be `Any`<ul><li>no server presented if not `Any`</li><li>Action `Release` disabled if not `Any`</li></ul></td>
-  </tr>
-  <tr>
-    <td width="25%" class="jdsr">Create </td>
-    <td width="*" class="jdsl">Create an IP to be attached/assigned </br><div class="jdsf">Qualifier Ignored</div></td>
+    <td width="*" class="jdsl">Attach IP to a `Server`: Qualifier MUST be `Any`<ul><li>no server presented if not `Any`</li><li>Action `Release` disabled if not `Any`</li></ul></td>
   </tr>
   <tr>
     <td width="25%" class="jdsr">Configure </td>
     <td width="*" class="jdsl">Modify metadata </br><ul><li>name<li>description</ul></td>
+  </tr>
+  <tr>
+    <td width="25%" class="jdsr">Create </td>
+    <td width="*" class="jdsl">Create an IP to be attached/assigned </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div></td>
   </tr>
   <tr>
     <td width="25%" class="jdsr">Delete </td>
@@ -40,9 +40,14 @@
     <td width="*" class="jdsl">Allow IP forwarding </br><div class="jdsf">Cloud Dependent</div></td>
   </tr>
   <tr>
+    <td width="25%" class="jdsr">Release </td>
+    <td width="*" class="jdsl">Release IP back into the account IP pool </td>
+  </tr>
+  <tr>
     <td width="25%" class="jdsr">StopForward </td>
     <td width="*" class="jdsl">Allow disablement of allow IP forwarding </br><div class="jdsf">Cloud Dependent</div></td>
   </tr>
   </table>
-  </BR>
   <!-- END OF IP.rst -->
+
+
