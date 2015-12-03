@@ -21,9 +21,10 @@
   </tr>
   <tr>
     <td width="25%" class="jdsr">Create </td>
-    <td width="*" class="jdsl">Create an `SSH Key` </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div></td>
+    <td width="*" class="jdsl">Create an `SSH Key` </br><div class="jdsf">*Qualifier Ignored*</div></td>
   </tr>
   </table>
   <!-- END OF SSH_Key.rst -->
 
+  
 

@@ -1,28 +1,29 @@
 ####  Account
-*  Access - Allow management of Account Level API Keys
-note: *role* must have *Full Access* for user to create **Account level keys**
+*  Access - Allow creation of Account Level API Key <div class="jdsf">(see: "API Key" below)</div><div class="jdsf">*Qualifier Ignored*</div>
+note: 1) This resource is in conjunction with *API Key* Resource and has no bearing on whether a user can view a cloud account or not, it is just providing "Account" as an API Key type to be created
+2) A *role* must have *Full Access* for every Resource Type and Action  in order for the *Account Level API Key* option to exist
 
 #### API Key
-*  Access - Allow management of User Level API Key
-*  Create User Key - Create API Key</br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div>
+*  Access - Allow creation of API Keys
+*  Create User Key - Allow User to create key for self</br> <div class="jdsf">*Qualifier Ignored*</div>
 note: A user will never be allowed to see any user key than their own. 
 
 ####  Blueprint 
 
 *  Access - Allow management of Blueprints
-*  Launch - Deploy a stack from a blueprint 
+*  Launch - Deploy a stack from a Blueprint 
 
 ####  Firewall
 *  Access - Allow management of Images
-note: New Attribute -- PENDING DESCRIPTION
+note: New Attribute - **PENDING DESCRIPTION**
 
 ####  Image 
 *  Access - Allow management of Images
 *  AccessPublic -Search Public Images 
 *  Configure -  Modify image metadata</br><ul><li>name<li>description<li>agent info</ul> 
 *  Delete - Delete Image
-*  DefineServer - Create Server from Account Library </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div>
-*  DefineServerFromPublic - Create Server from public Library </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div>
+*  DefineServer - Create Server from Account Library </br><div class="jdsf">*Qualifier Ignored*</div>
+*  DefineServerFromPublic - Create Server from public Library </br><div class="jdsf">*Qualifier Ignored*</div>
 *  ManageBilling - Change Budget Code of existing `Image`
 *  ManageOwnership - Change Group Ownership of existing `Image`
 *  ShareLocal - Share with other Accounts 
@@ -32,7 +33,7 @@ note: New Attribute -- PENDING DESCRIPTION
 *  Access - Allow management of IP Addresses
 *  Assign - Attach IP to a `Server`: Qualifier MUST be `Any`<ul><li>no server presented if not `Any`</li><li>Action `Release` disabled if not `Any`</li></ul>
 *  Configure - Modify metadata </br><ul><li>name<li>description</ul>
-*  Create - Create an IP to be attached/assigned </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div>
+*  Create - Create an IP to be attached/assigned </br><div class="jdsf">*Qualifier Ignored*</div>
 *  Delete - Remove IP from account IP pool
 *  Forward - Allow IP forwarding </br><div class="jdsf">Cloud Dependent</div>
 *  Release - Release IP back into the account IP pool 
@@ -43,8 +44,8 @@ note: New Attribute -- PENDING DESCRIPTION
 *  AddDataCenter - Add DataCenter </br>Requires `Configure`
 *  AddListener - Add Forwarding Rules
 *  AddServer - Add Server to `Load Balancer`
-*  Configure - Modify metadata </br><ul><li>name<li>description<li>datacenters</ul>
-*  Create - Create `Load Balancer` </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div>
+*  Configure - Modify metadata </br><ul><li>name<li>description<li>datacenters/zone</ul>
+*  Create - Create `Load Balancer` </br><div class="jdsf">*Qualifier Ignored*</div>
 *  Delete - Delete the `Load Balancer`
 *  EditListener - Modify existing Forwarding Rules
 *  RemoveDataCenter - Remove DataCenter </br>Requires `Configure`
@@ -52,8 +53,8 @@ note: New Attribute -- PENDING DESCRIPTION
 
 ####  Network 
 *  Access - Allow management of Network
-*  Configure - Modify metadata  </br><ul><li>name<li>description<li>datacenters</ul>
-*  Create - Create a `Network` </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div>
+*  Configure - Modify metadata  </br><ul><li>name<li>description<li>etc</ul>
+*  Create - Create a `Network` </br><div class="jdsf">*Qualifier Ignored*</div>
 *  Delete - Delete a `Network` 
 *  ManageBilling - Change Budget Code of existing `Network`
 *  ManageOwnership - Change Group Ownership of existing `Network`
@@ -61,8 +62,8 @@ note: New Attribute -- PENDING DESCRIPTION
 ####  Relational Database 
 *  Access - Allow management of Relational Database
 *  ChangePassword - Change administrator password to Relational Database object
-*  Configure - Modify metadata  </br><ul><li>name<li>description<li>datacenters</ul>
-*  Create - Create a `Relation DB Management System` </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div>
+*  Configure - Modify metadata  </br><ul><li>name<li>description</ul>
+*  Create - Create a `Relation DB Management System` </br><div class="jdsf">*Qualifier Ignored*</div>
 *  Terminate - Stop and Delete the Relational Database object
 *  ManageNetwork - Allow Grant/Revoke Nework Access Management
 
@@ -90,8 +91,8 @@ note: DCM Agent Enabled servers provide managements of Users
 
 ####  Snapshot
 *  Access - Allow management of Snapshot
-*  Configure - Modify metadata </br><ul><li>name<li>description<li>datacenters</ul>
-*  Create - Create a `Snapshot` </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div>
+*  Configure - Modify metadata </br><ul><li>name<li>description</ul>
+*  Create - Create a `Snapshot` </br><div class="jdsf">*Qualifier Ignored*</div>
 *  CreateVolume - Create `Volume` from `Snapshot` 
 *  Delete - Delete a `Snapshot`
 *  ShareLocal - Share with other Accounts
@@ -99,7 +100,7 @@ note: DCM Agent Enabled servers provide managements of Users
 
 ####  SSH Key
 *  Access - Allow management of SSH Key 
-*  Create - Create an `SSH Key` </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div>
+*  Create - Create an `SSH Key` </br><div class="jdsf">*Qualifier Ignored*</div>
 
 ####  Stack
 *  Access - View Blueprints
@@ -109,8 +110,8 @@ note: Much like the relationship between the ACLs of *Server* and *Image*, right
 
 ####  Subnet
 *  Access - Allow management of Subnet
-*  Configure - Modify metadata </br><ul><li>name<li>description<li>datacenters</ul>
-*  Create - Create a `Subnet` </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div>
+*  Configure - Modify metadata </br><ul><li>name<li>description</ul>
+*  Create - Create a `Subnet` </br><div class="jdsf">*Qualifier Ignored*</div>
 *  Delete - Delete a `Subnet` 
 *  ManageBilling - Change Budget Code of existing `Subnet`
 *  ManageOwnership - Change Group Ownership of existing `Subnet`
@@ -118,8 +119,8 @@ note: Much like the relationship between the ACLs of *Server* and *Image*, right
 ####  Volume 
 *  Access - Allow management of Volume
 *  Attach - Attach the `Volume` to a `Server`
-*  Configure - Modify metadata </br><ul><li>name<li>description<li>datacenters</ul>
-*  Create - Create a `Volume` </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div>
+*  Configure - Modify metadata </br><ul><li>name<li>description</li></ul>
+*  Create - Create a `Volume` </br><div class="jdsf">*Qualifier Ignored*</div>
 *  Delete - Delete the `Volume`
 *  Detach - Detach the `Volume` from `Server`
 *  ManageBilling - Change Budget Code of existing `Volume`

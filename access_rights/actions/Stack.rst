@@ -30,6 +30,6 @@
   </table>
   <!-- END OF Stack.rst -->
 
-.. note:: Much like the relationship between the ACLs of *Server* and *Image*, rights to **Launch** are granted in the *Resource: Blueprint* 
-
+.. note:: Much like the relationship between the ACLs of *Server* and *Image*, rights to **Launch** are granted in the *Resource: Blueprint*
+  
 

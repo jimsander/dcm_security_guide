@@ -21,9 +21,10 @@
   </tr>
   <tr>
     <td width="25%" class="jdsr">note: New Attribute </td>
-    <td width="*" class="jdsl">- PENDING DESCRIPTION</td>
+    <td width="*" class="jdsl">**PENDING DESCRIPTION**</td>
   </tr>
   </table>
   <!-- END OF Firewall.rst -->
 
+  
 

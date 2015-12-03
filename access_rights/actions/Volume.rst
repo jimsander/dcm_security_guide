@@ -25,11 +25,11 @@
   </tr>
   <tr>
     <td width="25%" class="jdsr">Configure </td>
-    <td width="*" class="jdsl">Modify metadata </br><ul><li>name<li>description<li>datacenters</ul></td>
+    <td width="*" class="jdsl">Modify metadata </br><ul><li>name<li>description</li></ul></td>
   </tr>
   <tr>
     <td width="25%" class="jdsr">Create </td>
-    <td width="*" class="jdsl">Create a `Volume` </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div></td>
+    <td width="*" class="jdsl">Create a `Volume` </br><div class="jdsf">*Qualifier Ignored*</div></td>
   </tr>
   <tr>
     <td width="25%" class="jdsr">Delete </td>

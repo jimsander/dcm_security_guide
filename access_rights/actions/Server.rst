@@ -94,6 +94,6 @@
   </table>
   <!-- END OF Server.rst -->
 
-.. note:: DCM Agent Enabled servers provide managements of Users 
-
+.. note:: DCM Agent Enabled servers provide managements of Users
+  
 

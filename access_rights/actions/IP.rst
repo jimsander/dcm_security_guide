@@ -29,7 +29,7 @@
   </tr>
   <tr>
     <td width="25%" class="jdsr">Create </td>
-    <td width="*" class="jdsl">Create an IP to be attached/assigned </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div></td>
+    <td width="*" class="jdsl">Create an IP to be attached/assigned </br><div class="jdsf">*Qualifier Ignored*</div></td>
   </tr>
   <tr>
     <td width="25%" class="jdsr">Delete </td>
@@ -50,4 +50,5 @@
   </table>
   <!-- END OF IP.rst -->
 
+  
 

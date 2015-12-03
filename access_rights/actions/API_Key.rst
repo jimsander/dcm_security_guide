@@ -17,15 +17,15 @@
 
   <tr>
     <td width="25%" class="jdsr">Access </td>
-    <td width="*" class="jdsl">Allow management of User Level API Key</td>
+    <td width="*" class="jdsl">Allow creation of API Keys</td>
   </tr>
   <tr>
     <td width="25%" class="jdsr">Create User Key </td>
-    <td width="*" class="jdsl">Create API Key</br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div></td>
+    <td width="*" class="jdsl">Allow User to create key for self</br> <div class="jdsf">*Qualifier Ignored*</div></td>
   </tr>
   </table>
   <!-- END OF API_Key.rst -->
 
-.. note:: A user will never be allowed to see any user key than their own.  
-
+.. note:: A user will never be allowed to see any user key than their own. 
+  
 

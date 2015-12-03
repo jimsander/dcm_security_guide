@@ -23,7 +23,9 @@ while (<STDIN>){
     $b =~ s/^\s+//;
     printf `sed 's!_ACTION_!$a!' d.rst | sed 's!_DESC_!$b!g' >> ${n}.rst`;
   }elsif  (defined($n) && /^note: (.*)/ ){
-    $note .= sprintf".. note:: $1 \n\n";
+    $note .= sprintf".. note:: $1\n";
+  } else{
+    $note .= sprintf "  $_";
   }
 }
 ( defined($n) ) &&  printf `echo "  </table>\n  </BR>\n  <!-- END OF ${n}.rst -->" >> ${n}.rst`;

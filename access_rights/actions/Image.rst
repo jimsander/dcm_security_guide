@@ -33,11 +33,11 @@
   </tr>
   <tr>
     <td width="25%" class="jdsr">DefineServer </td>
-    <td width="*" class="jdsl">Create Server from Account Library </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div></td>
+    <td width="*" class="jdsl">Create Server from Account Library </br><div class="jdsf">*Qualifier Ignored*</div></td>
   </tr>
   <tr>
     <td width="25%" class="jdsr">DefineServerFromPublic </td>
-    <td width="*" class="jdsl">Create Server from public Library </br><div class="jdsf">Qualifier values are equal (i.e. ANY == MINE)</div></td>
+    <td width="*" class="jdsl">Create Server from public Library </br><div class="jdsf">*Qualifier Ignored*</div></td>
   </tr>
   <tr>
     <td width="25%" class="jdsr">ManageBilling </td>
@@ -58,4 +58,5 @@
   </table>
   <!-- END OF Image.rst -->
 
+  
 

@@ -17,11 +17,12 @@
 
   <tr>
     <td width="25%" class="jdsr">Access </td>
-    <td width="*" class="jdsl">Allow management of Account Level API Keys</td>
+    <td width="*" class="jdsl">Allow creation of Account Level API Key <div class="jdsf">(see: "API Key" below)</div><div class="jdsf">*Qualifier Ignored*</div></td>
   </tr>
   </table>
   <!-- END OF Account.rst -->
 
-.. note:: *role* must have *Full Access* for user to create **Account level keys** 
-
+.. note:: 1) This resource is in conjunction with *API Key* Resource and has no bearing on whether a user can view a cloud account or not, it is just providing Account as an API Key type to be created
+  2) A *role* must have *Full Access* for every Resource Type and Action  in order for the *Account Level API Key* option to exist
+  
 

@@ -41,3 +41,9 @@ The **Actions** determine what “actions” the Access Right will allow for the
 
 .. include:: actions/Volume.rst
 
+.. toctree::
+   :maxdepth: 3
+   :hidden:
+   :titlesonly:
+
+   actions/Volume

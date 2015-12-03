@@ -36,6 +36,4 @@ Qualifier
    :titlesonly:
 
    resource_types
-   actions
-   foo
    qualifiers

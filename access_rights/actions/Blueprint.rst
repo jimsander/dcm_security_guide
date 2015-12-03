@@ -21,9 +21,11 @@
   </tr>
   <tr>
     <td width="25%" class="jdsr">Launch </td>
-    <td width="*" class="jdsl">Deploy a stack from a blueprint </td>
+    <td width="*" class="jdsl">Deploy a stack from a Blueprint </td>
   </tr>
   </table>
   <!-- END OF Blueprint.rst -->
 
+  
+  
 
