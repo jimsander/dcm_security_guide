@@ -42,19 +42,19 @@ Setting Access Rights
 ---------------------
 
 Access Rights are set from the *Roles* tab of the *User Access* page accessed from the Administration pulldown 
+
 *  (i.e. Administration->User Access->Roles )
 
-In the figure below:
+In the figure below the following steps have occurred  :
 
 *  Edited access rights for *Developer* Role
 *  Deselected some *Resource Types* for the role to prevent access to them ( Account, IP, Network and Subnet )
 *  Customized access for the *Volume* Resource type
-  *  Set *Qualifer* to *Mine* for *Actions* ( Delete, Detach and ManageOwnership ) which restricts these actions to resources belonging to the User associated
-    with this role
+  *  Set *Qualifer* to *Mine* for *Actions* ( Delete, Detach and ManageOwnership ) which restricts these actions to resources belonging to the User associated with this role
   *  Unchecked box of *Action* for ManageBilling which disables the availability of the action for this role
 
 .. figure:: ../images/dcmguide_role1_67.png
 
-The figure below shows the resulting *Access Right* settings after saving changes:
+.. important:: The figure below shows the resulting *Access Right* settings after saving changes:
 
 .. figure:: ../images/dcmguide_role2_67.png

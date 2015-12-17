@@ -4,7 +4,7 @@
     td.jdsl {text-align:left  !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;}
     td.jdsr {text-align:right !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;}
     th.jdsr {text-align:right !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;}
-    #jdsf {color: red;}
+    .jdsf {font-weight: bold; color: red;}
   </style>
   <table style="text-align:left;width:100%;border: 1px solid black;border-collapse:collapse;" cols="02">
   <tr>
@@ -22,7 +22,7 @@
   </tr>
   <tr>
     <td width="25%" class="jdsr">  Create </td>
-    <td width="*" class="jdsl">Create an `SSH Key` </br><div class="jdsf">**Qualifer Indistinct***</div></td>
+    <td width="*" class="jdsl">Create an `SSH Key` </br><div class="jdsf">Qualifer Indistinct</div></td>
   </tr>
   </table>
   <!-- END OF SSH_Key.rst -->

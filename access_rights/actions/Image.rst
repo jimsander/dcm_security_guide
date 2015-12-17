@@ -4,7 +4,7 @@
     td.jdsl {text-align:left  !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;}
     td.jdsr {text-align:right !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;}
     th.jdsr {text-align:right !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;}
-    #jdsf {color: red;}
+    .jdsf {font-weight: bold; color: red;}
   </style>
   <table style="text-align:left;width:100%;border: 1px solid black;border-collapse:collapse;" cols="02">
   <tr>
@@ -34,11 +34,11 @@
   </tr>
   <tr>
     <td width="25%" class="jdsr">  DefineServer </td>
-    <td width="*" class="jdsl">Create Server from Account Library </br><div class="jdsf">**Qualifer Indistinct***</div></td>
+    <td width="*" class="jdsl">Create Server from Account Library </br><div class="jdsf">Qualifer Indistinct</div></td>
   </tr>
   <tr>
     <td width="25%" class="jdsr">  DefineServerFromPublic </td>
-    <td width="*" class="jdsl">Create Server from public Library </br><div class="jdsf">**Qualifer Indistinct***</div></td>
+    <td width="*" class="jdsl">Create Server from public Library </br><div class="jdsf">Qualifer Indistinct</div></td>
   </tr>
   <tr>
     <td width="25%" class="jdsr">  ManageBilling </td>
