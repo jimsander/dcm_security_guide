@@ -112,7 +112,7 @@ html_theme_path = ['_themes']
 # "<project> v<release> documentation".
 
 # Tite for the HTML pages
-html_title = "Dell Cloud Manager Cloud Security Guide"
+html_title = "Dell Cloud Manager Security Guide"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 html_short_title = "DCM Cloud Security Guide"

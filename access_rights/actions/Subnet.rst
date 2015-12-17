@@ -4,6 +4,7 @@
     td.jdsl {text-align:left  !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;}
     td.jdsr {text-align:right !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;}
     th.jdsr {text-align:right !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;}
+    #jdsf {color: red;}
   </style>
   <table style="text-align:left;width:100%;border: 1px solid black;border-collapse:collapse;" cols="02">
   <tr>
@@ -16,27 +17,27 @@
   </tr>
 
   <tr>
-    <td width="25%" class="jdsr">Access </td>
+    <td width="25%" class="jdsr">  Access </td>
     <td width="*" class="jdsl">Allow management of Subnet</td>
   </tr>
   <tr>
-    <td width="25%" class="jdsr">Configure </td>
-    <td width="*" class="jdsl">Modify metadata </br><ul><li>name<li>description</ul></td>
+    <td width="25%" class="jdsr">  Configure </td>
+    <td width="*" class="jdsl">Edit Subnet metadata </br><ul><li>name<li>description</ul></td>
   </tr>
   <tr>
-    <td width="25%" class="jdsr">Create </td>
-    <td width="*" class="jdsl">Create a `Subnet` </br><div class="jdsf">*Qualifier Ignored*</div></td>
+    <td width="25%" class="jdsr">  Create </td>
+    <td width="*" class="jdsl">Create a `Subnet` </br><div class="jdsf">**Qualifer Indistinct***</div></td>
   </tr>
   <tr>
-    <td width="25%" class="jdsr">Delete </td>
+    <td width="25%" class="jdsr">  Delete </td>
     <td width="*" class="jdsl">Delete a `Subnet` </td>
   </tr>
   <tr>
-    <td width="25%" class="jdsr">ManageBilling </td>
+    <td width="25%" class="jdsr">  ManageBilling </td>
     <td width="*" class="jdsl">Change Budget Code of existing `Subnet`</td>
   </tr>
   <tr>
-    <td width="25%" class="jdsr">ManageOwnership </td>
+    <td width="25%" class="jdsr">  ManageOwnership </td>
     <td width="*" class="jdsl">Change Group Ownership of existing `Subnet`</td>
   </tr>
   </table>

@@ -4,6 +4,7 @@
     td.jdsl {text-align:left  !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;}
     td.jdsr {text-align:right !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;}
     th.jdsr {text-align:right !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;}
+    #jdsf {color: red;}
   </style>
   <table style="text-align:left;width:100%;border: 1px solid black;border-collapse:collapse;" cols="02">
   <tr>
@@ -16,43 +17,43 @@
   </tr>
 
   <tr>
-    <td width="25%" class="jdsr">Access </td>
+    <td width="25%" class="jdsr">  Access </td>
     <td width="*" class="jdsl">Allow management of Images</td>
   </tr>
   <tr>
-    <td width="25%" class="jdsr">AccessPublic </td>
+    <td width="25%" class="jdsr">  AccessPublic </td>
     <td width="*" class="jdsl">Search Public Images </td>
   </tr>
   <tr>
-    <td width="25%" class="jdsr">Configure </td>
-    <td width="*" class="jdsl">Modify image metadata</br><ul><li>name<li>description<li>agent info</ul> </td>
+    <td width="25%" class="jdsr">  Configure </td>
+    <td width="*" class="jdsl">Edit image metadata</br><ul><li>name<li>description<li>dcm agent info</ul> </td>
   </tr>
   <tr>
-    <td width="25%" class="jdsr">Delete </td>
+    <td width="25%" class="jdsr">  Delete </td>
     <td width="*" class="jdsl">Delete Image</td>
   </tr>
   <tr>
-    <td width="25%" class="jdsr">DefineServer </td>
-    <td width="*" class="jdsl">Create Server from Account Library </br><div class="jdsf">*Qualifier Ignored*</div></td>
+    <td width="25%" class="jdsr">  DefineServer </td>
+    <td width="*" class="jdsl">Create Server from Account Library </br><div class="jdsf">**Qualifer Indistinct***</div></td>
   </tr>
   <tr>
-    <td width="25%" class="jdsr">DefineServerFromPublic </td>
-    <td width="*" class="jdsl">Create Server from public Library </br><div class="jdsf">*Qualifier Ignored*</div></td>
+    <td width="25%" class="jdsr">  DefineServerFromPublic </td>
+    <td width="*" class="jdsl">Create Server from public Library </br><div class="jdsf">**Qualifer Indistinct***</div></td>
   </tr>
   <tr>
-    <td width="25%" class="jdsr">ManageBilling </td>
+    <td width="25%" class="jdsr">  ManageBilling </td>
     <td width="*" class="jdsl">Change Budget Code of existing `Image`</td>
   </tr>
   <tr>
-    <td width="25%" class="jdsr">ManageOwnership </td>
+    <td width="25%" class="jdsr">  ManageOwnership </td>
     <td width="*" class="jdsl">Change Group Ownership of existing `Image`</td>
   </tr>
   <tr>
-    <td width="25%" class="jdsr">ShareLocal </td>
+    <td width="25%" class="jdsr">  ShareLocal </td>
     <td width="*" class="jdsl">Share with other Accounts </td>
   </tr>
   <tr>
-    <td width="25%" class="jdsr">SharePublic </td>
+    <td width="25%" class="jdsr">  SharePublic </td>
     <td width="*" class="jdsl">Share publicly with Cloud Provider</td>
   </tr>
   </table>

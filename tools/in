@@ -1,29 +1,35 @@
 ####  Account
-*  Access - Allow creation of Account Level API Key <div class="jdsf">(see: "API Key" below)</div><div class="jdsf">*Qualifier Ignored*</div>
-note: 1) This resource is in conjunction with *API Key* Resource and has no bearing on whether a user can view a cloud account or not, it is just providing "Account" as an API Key type to be created
-2) A *role* must have *Full Access* for every Resource Type and Action  in order for the *Account Level API Key* option to exist
+*  Access - Allow access (view, edit and creation) of Account Level API Key<div class="jdsf">**Qualifer Indistinct***</div>
+tip: This resource has no bearing on whether a user can view a cloud account or not
+warning: A *role* must have **Full Access** for every Resource Type and Action  in order for the *Account Level API Key* option to exist
 
 #### API Key
-*  Access - Allow creation of API Keys
-*  Create User Key - Allow User to create key for self</br> <div class="jdsf">*Qualifier Ignored*</div>
-note: A user will never be allowed to see any user key than their own. 
+*  Access - Allow Access to the User API Keys (View/Enable )
+*  Create User Key - Allow User to create or edit a User Key</br> <div class="jdsf">**Qualifer Indistinct***</div>
+note: A user will never be allowed to see any user key than their own.
 
 ####  Blueprint 
-
-*  Access - Allow management of Blueprints
-*  Launch - Deploy a stack from a Blueprint 
+*  Access - Enables ability to Launch to Blueprints
+*  Launch - Deploy a stack from a Blueprint
+note: This resource only applies to launching Blueprints. To allow editing, adding, or deleting Blueprints to the Catalog, see :ref:`Additional Group Settings <additional_group_settings>` which has a Group-wide setting "Allow group members to manage the company catalog"
 
 ####  Firewall
-*  Access - Allow management of Images
-note: New Attribute - **PENDING DESCRIPTION**
+*  Access - Allow management of Firewalls
+*  Add Rule - Add a Firewall rule
+*  Copy - Duplicate a Firewall from an existing Firewall
+*  Configure -  Edit Firewall metadata</br><ul><li>name<li>description</ul> 
+*  Create - Create new Firewall
+*  Delete - Delete Firewall
+*  Remove Rule - Remove a Firewall rule
+*  View Logs - ***Deprecated****
 
-####  Image 
+####  Image
 *  Access - Allow management of Images
 *  AccessPublic -Search Public Images 
-*  Configure -  Modify image metadata</br><ul><li>name<li>description<li>agent info</ul> 
+*  Configure -  Edit image metadata</br><ul><li>name<li>description<li>dcm agent info</ul> 
 *  Delete - Delete Image
-*  DefineServer - Create Server from Account Library </br><div class="jdsf">*Qualifier Ignored*</div>
-*  DefineServerFromPublic - Create Server from public Library </br><div class="jdsf">*Qualifier Ignored*</div>
+*  DefineServer - Create Server from Account Library </br><div class="jdsf">**Qualifer Indistinct***</div>
+*  DefineServerFromPublic - Create Server from public Library </br><div class="jdsf">**Qualifer Indistinct***</div>
 *  ManageBilling - Change Budget Code of existing `Image`
 *  ManageOwnership - Change Group Ownership of existing `Image`
 *  ShareLocal - Share with other Accounts 
@@ -32,8 +38,8 @@ note: New Attribute - **PENDING DESCRIPTION**
 ####  IP
 *  Access - Allow management of IP Addresses
 *  Assign - Attach IP to a `Server`: Qualifier MUST be `Any`<ul><li>no server presented if not `Any`</li><li>Action `Release` disabled if not `Any`</li></ul>
-*  Configure - Modify metadata </br><ul><li>name<li>description</ul>
-*  Create - Create an IP to be attached/assigned </br><div class="jdsf">*Qualifier Ignored*</div>
+*  Configure - Edit IP metadata </br><ul><li>name<li>description</ul>
+*  Create - Create an IP to be attached/assigned </br><div class="jdsf">**Qualifer Indistinct***</div>
 *  Delete - Remove IP from account IP pool
 *  Forward - Allow IP forwarding </br><div class="jdsf">Cloud Dependent</div>
 *  Release - Release IP back into the account IP pool 
@@ -44,17 +50,17 @@ note: New Attribute - **PENDING DESCRIPTION**
 *  AddDataCenter - Add DataCenter </br>Requires `Configure`
 *  AddListener - Add Forwarding Rules
 *  AddServer - Add Server to `Load Balancer`
-*  Configure - Modify metadata </br><ul><li>name<li>description<li>datacenters/zone</ul>
-*  Create - Create `Load Balancer` </br><div class="jdsf">*Qualifier Ignored*</div>
+*  Configure - Edit Load Balancer metadata </br><ul><li>name<li>description<li>zones (if applicable for cloud)<li>Health Checks</ul>
+*  Create - Create `Load Balancer` </br><div class="jdsf">**Qualifer Indistinct***</div>
 *  Delete - Delete the `Load Balancer`
-*  EditListener - Modify existing Forwarding Rules
-*  RemoveDataCenter - Remove DataCenter </br>Requires `Configure`
+*  EditListener - Add/Remove Forwarding Rules
+*  RemoveDataCenter - Remove DataCenter/Zone </br>Requires `Configure`
 *  RemoveServer - Remove Server to `Load Balancer`
 
 ####  Network 
 *  Access - Allow management of Network
-*  Configure - Modify metadata  </br><ul><li>name<li>description<li>etc</ul>
-*  Create - Create a `Network` </br><div class="jdsf">*Qualifier Ignored*</div>
+*  Configure - Edit Network metadata  </br><ul><li>Name<li>Description<li>Budget</ul>
+*  Create - Create a `Network` </br><div class="jdsf">**Qualifer Indistinct***</div>
 *  Delete - Delete a `Network` 
 *  ManageBilling - Change Budget Code of existing `Network`
 *  ManageOwnership - Change Group Ownership of existing `Network`
@@ -62,37 +68,36 @@ note: New Attribute - **PENDING DESCRIPTION**
 ####  Relational Database 
 *  Access - Allow management of Relational Database
 *  ChangePassword - Change administrator password to Relational Database object
-*  Configure - Modify metadata  </br><ul><li>name<li>description</ul>
-*  Create - Create a `Relation DB Management System` </br><div class="jdsf">*Qualifier Ignored*</div>
+*  Configure - Edit Relational Database metadata  </br><ul><li>name<li>description</ul>
+*  Create - Create a `Relation DB Management System` </br><div class="jdsf">**Qualifer Indistinct***</div>
 *  Terminate - Stop and Delete the Relational Database object
 *  ManageNetwork - Allow Grant/Revoke Nework Access Management
 
 ####  Server
 *  Access - Allow management of Server
-*  AddEndpoint - **PENDING DESCRIPTION**
-*  Configure - Modify existing server</br><ul><li>product<li>server-name<li>users - (DCM Agent Enabled Only)</ul>
+*  AddEndpoint - Add port forwarding rules for server
+*  Configure - Edit Server</br><ul><li>product<li>server-name<li>users - (DCM Agent Must be operational)</ul>
 *  Image - Make Image from Server
 *  ManageBilling - Change Budget Code of existing `Server`
 *  ManageOwnership - Change Group Ownership of existing `Server`
-*  ManageUsers - Add/Remove DCM Users to `Server`</br>(Agent Enabled Only)
-*  Monitor - Monitor **TBD**
+*  ManageUsers - Add/Remove DCM Users to `Server`</br>(DCM Agent Must be operational)
+*  Monitor - **Deprecated***
 *  Pause - Control Server with Pause
 *  Reboot - Control Server with Reboot
-*  RemoveEndpoint - **PENDING DESCRIPTION**
+*  RemoveEndpoint - Remove port forwarding rules for server
 *  Resume - Control Server with Resume
 *  Start - Control Server with Start
 *  Stop - Control Server with Stop
 *  Suspend - Control Server with Suspend
 *  Terminate - Control Server with Terminate
 *  UnPause -  Control Server with UnPause
-*  ViewLogs - View DCM Agent Logs 
-*  ViewPassword - View the vm admin logon credentials
-note: DCM Agent Enabled servers provide managements of Users
+*  ViewLogs - View DCM Agent Logs </br>(DCM Agent Must be operational)
+*  ViewPassword - View the Server admin logon credentials
 
 ####  Snapshot
 *  Access - Allow management of Snapshot
-*  Configure - Modify metadata </br><ul><li>name<li>description</ul>
-*  Create - Create a `Snapshot` </br><div class="jdsf">*Qualifier Ignored*</div>
+*  Configure - Edit Snapshot metadata </br><ul><li>name<li>description</ul>
+*  Create - Create a `Snapshot` </br><div class="jdsf">**Qualifer Indistinct***</div>
 *  CreateVolume - Create `Volume` from `Snapshot` 
 *  Delete - Delete a `Snapshot`
 *  ShareLocal - Share with other Accounts
@@ -100,18 +105,18 @@ note: DCM Agent Enabled servers provide managements of Users
 
 ####  SSH Key
 *  Access - Allow management of SSH Key 
-*  Create - Create an `SSH Key` </br><div class="jdsf">*Qualifier Ignored*</div>
+*  Create - Create an `SSH Key` </br><div class="jdsf">**Qualifer Indistinct***</div>
 
 ####  Stack
 *  Access - View Blueprints
 *  Configure - Modify a running stack
 *  Terminate - Destroy a running stack
-note: Much like the relationship between the ACLs of *Server* and *Image*, rights to **Launch** are granted in the *Resource: Blueprint*
+note: Rights to Create a *Stack* are granted via **Launch** in Resource: Blueprint
 
 ####  Subnet
 *  Access - Allow management of Subnet
-*  Configure - Modify metadata </br><ul><li>name<li>description</ul>
-*  Create - Create a `Subnet` </br><div class="jdsf">*Qualifier Ignored*</div>
+*  Configure - Edit Subnet metadata </br><ul><li>name<li>description</ul>
+*  Create - Create a `Subnet` </br><div class="jdsf">**Qualifer Indistinct***</div>
 *  Delete - Delete a `Subnet` 
 *  ManageBilling - Change Budget Code of existing `Subnet`
 *  ManageOwnership - Change Group Ownership of existing `Subnet`
@@ -119,8 +124,8 @@ note: Much like the relationship between the ACLs of *Server* and *Image*, right
 ####  Volume 
 *  Access - Allow management of Volume
 *  Attach - Attach the `Volume` to a `Server`
-*  Configure - Modify metadata </br><ul><li>name<li>description</li></ul>
-*  Create - Create a `Volume` </br><div class="jdsf">*Qualifier Ignored*</div>
+*  Configure - Edit Volume metadata </br><ul><li>name<li>description</li></ul>
+*  Create - Create a `Volume` </br><div class="jdsf">**Qualifer Indistinct***</div>
 *  Delete - Delete the `Volume`
 *  Detach - Detach the `Volume` from `Server`
 *  ManageBilling - Change Budget Code of existing `Volume`

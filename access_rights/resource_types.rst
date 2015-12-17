@@ -7,9 +7,15 @@
 Resource Types
 --------------
 
+
 The **Actions** determine what “actions” the Access Right will allow for the Resource type. All actions can be allowed or specific actions can be allowed. The allowable actions differ depending upon the Resource type.
 
-.. note:: Where a description contains **Qualifer Ignored**, the qualifer value for an **Action** is either all or none; in other words, whether value is MINE or GROUP, is same affect as ANY, but no value will be no access as expected.
+.. note:: In the following definitions, where a description contains **Qualifer Indistinct**, it means the *Action* does not distinguish a difference between the *Qualifers* ( Mine, Group or Any ).  Any *Qualifier* specified will result in the same behavior.
+
+.. note:: Common for each Resource Type is the action *Access* which provides the ability to both view the DCM resource type and also use the additional actions of that resource type
+
+
+Please refer to our online help, https://dcm.enstratius.com/help/HelpGuide/Default.htm, for detailed information on resources and options
 
 .. include:: actions/Account.rst
 
@@ -46,4 +52,3 @@ The **Actions** determine what “actions” the Access Right will allow for the
    :hidden:
    :titlesonly:
 
-   actions/Volume

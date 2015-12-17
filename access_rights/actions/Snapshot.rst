@@ -4,6 +4,7 @@
     td.jdsl {text-align:left  !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;}
     td.jdsr {text-align:right !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;}
     th.jdsr {text-align:right !IMPORTANT;vertical-align:top !IMPORTANT;border: 1px solid black !IMPORTANT;padding:3px;}
+    #jdsf {color: red;}
   </style>
   <table style="text-align:left;width:100%;border: 1px solid black;border-collapse:collapse;" cols="02">
   <tr>
@@ -16,31 +17,31 @@
   </tr>
 
   <tr>
-    <td width="25%" class="jdsr">Access </td>
+    <td width="25%" class="jdsr">  Access </td>
     <td width="*" class="jdsl">Allow management of Snapshot</td>
   </tr>
   <tr>
-    <td width="25%" class="jdsr">Configure </td>
-    <td width="*" class="jdsl">Modify metadata </br><ul><li>name<li>description</ul></td>
+    <td width="25%" class="jdsr">  Configure </td>
+    <td width="*" class="jdsl">Edit Snapshot metadata </br><ul><li>name<li>description</ul></td>
   </tr>
   <tr>
-    <td width="25%" class="jdsr">Create </td>
-    <td width="*" class="jdsl">Create a `Snapshot` </br><div class="jdsf">*Qualifier Ignored*</div></td>
+    <td width="25%" class="jdsr">  Create </td>
+    <td width="*" class="jdsl">Create a `Snapshot` </br><div class="jdsf">**Qualifer Indistinct***</div></td>
   </tr>
   <tr>
-    <td width="25%" class="jdsr">CreateVolume </td>
+    <td width="25%" class="jdsr">  CreateVolume </td>
     <td width="*" class="jdsl">Create `Volume` from `Snapshot` </td>
   </tr>
   <tr>
-    <td width="25%" class="jdsr">Delete </td>
+    <td width="25%" class="jdsr">  Delete </td>
     <td width="*" class="jdsl">Delete a `Snapshot`</td>
   </tr>
   <tr>
-    <td width="25%" class="jdsr">ShareLocal </td>
+    <td width="25%" class="jdsr">  ShareLocal </td>
     <td width="*" class="jdsl">Share with other Accounts</td>
   </tr>
   <tr>
-    <td width="25%" class="jdsr">SharePublic </td>
+    <td width="25%" class="jdsr">  SharePublic </td>
     <td width="*" class="jdsl">Share publicly with Cloud Provider</td>
   </tr>
   </table>
